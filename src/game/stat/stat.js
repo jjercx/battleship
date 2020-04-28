@@ -14,10 +14,12 @@ const Value = styled.span`
   font-size: 60px;
   flex: 1;
   align-self: center;
+  font-weight: 300;
 `;
 
 const Title = styled.span`
   font-size: 30px;
+  font-weight: 600;
 `;
 
 export default ({ color, title, value }) => (
