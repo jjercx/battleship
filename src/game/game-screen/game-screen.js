@@ -7,11 +7,13 @@ import Ship from "game/ship-item/ship";
 import ShipItem from "game/ship-item/ship-item";
 
 const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  padding: 20px 0;
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: ${props => props.theme.black};
 `;
 
 const StatPanel = styled.div`
@@ -58,7 +60,7 @@ const GameScreen = ({ size = 10 }) => (
           <Stat value={0} title="Turns" color="blue"></Stat>
         </StatPanel>
         <ShipPanel>
-          {ships.map((ship) => (
+          {ships.map(ship => (
             <ShipItem ship={ship} key={ship.id}></ShipItem>
           ))}
         </ShipPanel>

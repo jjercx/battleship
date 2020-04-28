@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-color: ${(props) => props.color ?? "gray"};
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  color: ${props => props.theme.green};
+  border: 1px solid ${props => props.theme.green};
 `;
 
 const Value = styled.span`

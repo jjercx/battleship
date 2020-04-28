@@ -11,16 +11,18 @@ const ShipImage = styled.img`
   --size: 20px;
   height: calc(var(--size));
   margin-right: 10px;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(67%) saturate(3538%)
+    hue-rotate(105deg) brightness(100%) contrast(87%);
 `;
 
 const HitPoint = styled.div`
-  --size: 15px;
+  --size: 10px;
   width: var(--size);
   height: var(--size);
   border-radius: var(--size);
-  border: 1px solid ${(props) => (props.isHit ? "red" : "#333")};
   margin: 0px 2.5px;
-  background-color: ${(props) => (props.isHit ? "red" : "white")};
+  background-color: ${props =>
+    props.isHit ? props.theme.red : props.theme.green};
 `;
 
 export default ({ ship }) => (
