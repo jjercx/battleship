@@ -22,8 +22,8 @@ const Title = styled.span`
   font-weight: 600;
 `;
 
-export default ({ color, title, value }) => (
-  <Container color={color}>
+export default ({ title, value }) => (
+  <Container>
     <Value>{value}</Value>
     <Title>{title}</Title>
   </Container>

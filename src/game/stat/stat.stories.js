@@ -1,6 +1,8 @@
 import React from "react";
 import Stat from "game/stat";
 import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
+import theme from "app/theme";
 
 export default {
   title: "Stat",
@@ -9,9 +11,9 @@ export default {
 };
 
 const Container = styled.div`
-  width: 120px;
-  height: 150px;
-  display: flex;
+  width: 80px;
+  height: 100px;
+  display: grid;
 `;
 
 export const statData = {
@@ -20,13 +22,9 @@ export const statData = {
 };
 
 export const Default = () => (
-  <Container>
-    <Stat {...statData} />
-  </Container>
-);
-
-export const Colored = () => (
-  <Container>
-    <Stat {...statData} color="orange" />
-  </Container>
+  <ThemeProvider theme={theme}>
+    <Container>
+      <Stat {...statData} />
+    </Container>
+  </ThemeProvider>
 );
