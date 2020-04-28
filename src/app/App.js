@@ -1,11 +1,11 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Game from "game/GameScreen";
+import GameScreen from "game/game-screen";
 
 const App = () => (
   <Switch>
     <Route path="/">
-      <Game />
+      <GameScreen />
     </Route>
   </Switch>
 );

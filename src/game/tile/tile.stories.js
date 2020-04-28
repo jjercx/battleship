@@ -1,5 +1,5 @@
 import React from "react";
-import Tile from "game/Tile";
+import Tile from "game/tile";
 import styled from "styled-components";
 
 export default {
