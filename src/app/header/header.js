@@ -8,7 +8,7 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 5px 5px 5px ${props => props.theme.green}11;
+  box-shadow: 0px 10px 50px 10px ${props => props.theme.green}20;
 `;
 
 const Text = styled.span`
