@@ -2,23 +2,22 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  flex: 1;
   background-color: ${(props) => props.color ?? "gray"};
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px 30px;
+  padding: 10px;
 `;
 
 const Value = styled.span`
-  font-size: 60px;
+  font-size: 40px;
   flex: 1;
   align-self: center;
   font-weight: 300;
 `;
 
 const Title = styled.span`
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
 `;
 
