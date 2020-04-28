@@ -1,6 +1,6 @@
 import React from "react";
 import ShipItem from "game/ship-item";
-import Ship from "./ship";
+import Ship from "game/ship";
 import { ThemeProvider } from "styled-components";
 import theme from "app/theme";
 

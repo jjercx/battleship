@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Grid from "game/grid";
 import Stat from "game/stat";
 import shipData from "./data";
-import Ship from "game/ship-item/ship";
+import Ship from "game/ship";
 import ShipItem from "game/ship-item/ship-item";
 import Header from "app/header";
 
