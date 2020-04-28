@@ -5,14 +5,16 @@ import Stat from "game/stat";
 import shipData from "./data";
 import Ship from "game/ship-item/ship";
 import ShipItem from "game/ship-item/ship-item";
+import Header from "app/header";
 
 const Container = styled.div`
-  padding: 20px 0;
+  padding-bottom: 20px;
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: ${props => props.theme.black};
 `;
 
@@ -48,10 +50,9 @@ shipData.forEach(({ count, size }) => {
   });
 });
 
-console.log(ships);
-
 const GameScreen = ({ size = 10 }) => (
   <Container>
+    <Header />
     <Row>
       <Column>
         <StatPanel>
