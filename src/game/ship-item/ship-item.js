@@ -23,14 +23,11 @@ const HitPoint = styled.div`
   background-color: ${(props) => (props.isHit ? "red" : "white")};
 `;
 
-export default ({ ship }) => {
-  console.log(ship);
-  return (
-    <Container>
-      <ShipImage size={ship.size} src={ship.image}></ShipImage>
-      {[...Array(ship.size)].map((_, i) => (
-        <HitPoint isHit={ship.hits > i}></HitPoint>
-      ))}
-    </Container>
-  );
-};
+export default ({ ship }) => (
+  <Container>
+    <ShipImage size={ship.size} src={ship.image}></ShipImage>
+    {[...Array(ship.size)].map((_, i) => (
+      <HitPoint key={i} isHit={ship.hits > i}></HitPoint>
+    ))}
+  </Container>
+);
