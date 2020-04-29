@@ -5,10 +5,11 @@ import radar from "./assets/radargrid.png";
 import { A_CHAR_CODE } from "app/constants/game";
 
 const Grid = styled.div`
+  --size: 6vmin;
   margin: 10px;
   display: grid;
-  grid-template-columns: 4vmin repeat(10, 8vmin);
-  grid-template-rows: 4vmin repeat(10, 8vmin);
+  grid-template-columns: calc(var(--size) / 2) repeat(10, var(--size));
+  grid-template-rows: calc(var(--size) / 2) repeat(10, var(--size));
 `;
 
 const Background = styled.div`
