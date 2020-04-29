@@ -2,7 +2,7 @@ import {
   GAME_READY,
   GAME_SETUP,
   TILE_TOUCH,
-  SHIP_UPDATE,
+  GAME_UPDATE,
 } from "app/constants/action-types";
 
 export const gameSetup = ({ size }) => ({
@@ -26,7 +26,7 @@ export const tileTouch = ({ row, col }) => ({
   },
 });
 
-export const shipUpdate = ({ ship }) => ({
-  type: SHIP_UPDATE,
-  payload: ship,
+export const gameUpdate = ({ ship, shots, hits, turns }) => ({
+  type: GAME_UPDATE,
+  payload: { ship, shots, hits, turns },
 });

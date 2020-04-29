@@ -5,7 +5,13 @@ import Stat from "game/stat";
 import ShipItem from "game/ship-item/ship-item";
 import Header from "app/header";
 import { connect } from "react-redux";
-import { getShips, getLoading } from "game/game.reducer";
+import {
+  getShips,
+  getLoading,
+  getShots,
+  getTurns,
+  getHits,
+} from "game/game.reducer";
 import * as actions from "game/game.actions";
 
 const Container = styled.div`
@@ -44,7 +50,15 @@ const Column = styled.div`
   justify-content: center;
 `;
 
-const GameScreen = ({ loading, ships, size = 10, gameSetup }) => {
+const GameScreen = ({
+  loading,
+  ships,
+  size = 10,
+  gameSetup,
+  hits,
+  shots,
+  turns,
+}) => {
   useEffect(() => {
     gameSetup({ size });
   }, [gameSetup, size]);
@@ -59,9 +73,9 @@ const GameScreen = ({ loading, ships, size = 10, gameSetup }) => {
       <Row>
         <Column>
           <StatPanel>
-            <Stat value={0} title="Hits" color="red"></Stat>
-            <Stat value={0} title="Shots" color="green"></Stat>
-            <Stat value={0} title="Turns" color="blue"></Stat>
+            <Stat value={hits} title="Hits"></Stat>
+            <Stat value={shots} title="Shots"></Stat>
+            <Stat value={turns} title="Turns"></Stat>
           </StatPanel>
           <ShipPanel>
             {ships.map(ship => (
@@ -78,6 +92,9 @@ const GameScreen = ({ loading, ships, size = 10, gameSetup }) => {
 const mapStateToProps = state => ({
   loading: getLoading(state),
   ships: getShips(state),
+  shots: getShots(state),
+  turns: getTurns(state),
+  hits: getHits(state),
 });
 
 export default connect(mapStateToProps, actions)(GameScreen);
