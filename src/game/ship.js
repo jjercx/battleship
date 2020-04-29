@@ -2,6 +2,7 @@ import aircraft from "game/ship-item/assets/aircraft.png";
 import battleship from "game/ship-item/assets/battleship.png";
 import submarine from "game/ship-item/assets/submarine.png";
 import carriership from "game/ship-item/assets/carriership.png";
+import { randomString } from "app/helpers/random";
 
 export default class Ship {
   constructor(size) {
@@ -28,7 +29,6 @@ export default class Ship {
   }
 
   getId() {
-    // 5-character random string
-    return Math.random().toString(36).substring(7);
+    return randomString(5);
   }
 }
