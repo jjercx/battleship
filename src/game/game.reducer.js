@@ -4,9 +4,12 @@ export const getShips = ({ game: { ships } }) => Object.values(ships);
 
 export const getLoading = ({ game: { loading } }) => loading;
 
+export const getCell = ({ game: { board } }, row, col) =>
+  board && board[row][col];
+
 const initialState = {
   loading: false,
-  board: [],
+  board: null,
   ships: {},
 };
 

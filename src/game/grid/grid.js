@@ -2,6 +2,7 @@ import React from "react";
 import Tile from "game/tile";
 import styled from "styled-components";
 import radar from "./assets/radargrid.png";
+import { A_CHAR_CODE } from "app/constants/game";
 
 const Grid = styled.div`
   margin: 10px;
@@ -27,8 +28,6 @@ const Letter = styled.span`
   grid-row-start: ${props => props.row};
 `;
 
-const A_CHAR_CODE = 65;
-
 export default ({ size }) => (
   <Grid>
     <Background />
@@ -44,7 +43,7 @@ export default ({ size }) => (
     ))}
     {[...Array(size)].map((_, row) =>
       [...Array(size)].map((_, col) => (
-        <Tile row={row + 2} col={col + 2} key={`${row}-${col}`} />
+        <Tile row={row} col={col} key={`${row}-${col}`} />
       ))
     )}
   </Grid>

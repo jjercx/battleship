@@ -6,3 +6,4 @@ export const DIRECTIONS = [
 ];
 
 export const EMPTY = "-----";
+export const A_CHAR_CODE = 65;
