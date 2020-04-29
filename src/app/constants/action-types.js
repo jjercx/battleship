@@ -4,3 +4,5 @@ export const GAME_WON = "GAME_WON";
 export const GAME_LOST = "GAME_LOST";
 
 export const TILE_TOUCH = "TILE_TOUCH";
+
+export const SHIP_UPDATE = "SHIP_UPDATE";

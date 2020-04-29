@@ -17,7 +17,7 @@ export default class Game {
     const ships = {};
     data.forEach(({ count, size }) => {
       for (let i = 0; i < count; i++) {
-        const ship = new Ship(size);
+        const ship = new Ship({ size });
         ships[ship.id] = ship;
       }
     });

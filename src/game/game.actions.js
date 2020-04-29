@@ -1,4 +1,9 @@
-import { GAME_READY, GAME_SETUP, TILE_TOUCH } from "app/constants/action-types";
+import {
+  GAME_READY,
+  GAME_SETUP,
+  TILE_TOUCH,
+  SHIP_UPDATE,
+} from "app/constants/action-types";
 
 export const gameSetup = ({ size }) => ({
   type: GAME_SETUP,
@@ -19,4 +24,9 @@ export const tileTouch = ({ row, col }) => ({
     row,
     col,
   },
+});
+
+export const shipUpdate = ({ ship }) => ({
+  type: SHIP_UPDATE,
+  payload: ship,
 });

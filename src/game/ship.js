@@ -5,11 +5,11 @@ import carriership from "game/ship-item/assets/carriership.png";
 import { randomString } from "app/helpers/random";
 
 export default class Ship {
-  constructor(size) {
-    this.id = this.getId();
+  constructor({ id, size, hits, image }) {
+    this.id = id || this.getId();
     this.size = size;
-    this.hits = 0;
-    this.image = this.getImage();
+    this.hits = hits || 0;
+    this.image = image || this.getImage();
   }
 
   getImage() {
@@ -25,6 +25,12 @@ export default class Ship {
       default:
         console.error("Invalid ship size");
         return "";
+    }
+  }
+
+  hit() {
+    if (this.hits < this.size) {
+      this.hits += 1;
     }
   }
 
