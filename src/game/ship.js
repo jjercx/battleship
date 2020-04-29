@@ -34,6 +34,10 @@ export default class Ship {
     }
   }
 
+  isAlive() {
+    return this.hits < this.size;
+  }
+
   getId() {
     return randomString(5);
   }

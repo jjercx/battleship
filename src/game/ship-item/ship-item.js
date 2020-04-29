@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Container = styled.div`
   display: flex;
@@ -11,8 +11,16 @@ const ShipImage = styled.img`
   --size: 20px;
   height: calc(var(--size));
   margin-right: 10px;
-  filter: brightness(0) saturate(100%) invert(48%) sepia(67%) saturate(3538%)
-    hue-rotate(105deg) brightness(100%) contrast(87%);
+  ${props =>
+    props.isAlive
+      ? css`
+          filter: brightness(0) saturate(100%) invert(48%) sepia(67%)
+            saturate(3538%) hue-rotate(105deg) brightness(100%) contrast(87%);
+        `
+      : css`
+          filter: brightness(0) saturate(100%) invert(12%) sepia(99%)
+            saturate(5598%) hue-rotate(348deg) brightness(87%) contrast(109%);
+        `}
 `;
 
 const HitPoint = styled.div`
@@ -27,7 +35,11 @@ const HitPoint = styled.div`
 
 export default ({ ship }) => (
   <Container>
-    <ShipImage size={ship.size} src={ship.image}></ShipImage>
+    <ShipImage
+      size={ship.size}
+      src={ship.image}
+      isAlive={ship.isAlive()}
+    ></ShipImage>
     {[...Array(ship.size)].map((_, i) => (
       <HitPoint key={i} isHit={ship.hits > i}></HitPoint>
     ))}
