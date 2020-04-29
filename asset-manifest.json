@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/battleship/static/css/main.a1586cd1.chunk.css",
+    "main.js": "/battleship/static/js/main.76a7ea9f.chunk.js",
+    "main.js.map": "/battleship/static/js/main.76a7ea9f.chunk.js.map",
+    "runtime-main.js": "/battleship/static/js/runtime-main.da07c048.js",
+    "runtime-main.js.map": "/battleship/static/js/runtime-main.da07c048.js.map",
+    "static/js/2.e2c9717d.chunk.js": "/battleship/static/js/2.e2c9717d.chunk.js",
+    "static/js/2.e2c9717d.chunk.js.map": "/battleship/static/js/2.e2c9717d.chunk.js.map",
+    "index.html": "/battleship/index.html",
+    "precache-manifest.e4191e84f01894a1bd1cfc3934657d16.js": "/battleship/precache-manifest.e4191e84f01894a1bd1cfc3934657d16.js",
+    "service-worker.js": "/battleship/service-worker.js",
+    "static/css/main.a1586cd1.chunk.css.map": "/battleship/static/css/main.a1586cd1.chunk.css.map",
+    "static/js/2.e2c9717d.chunk.js.LICENSE.txt": "/battleship/static/js/2.e2c9717d.chunk.js.LICENSE.txt",
+    "static/media/radargrid.png": "/battleship/static/media/radargrid.1e31cf88.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da07c048.js",
+    "static/js/2.e2c9717d.chunk.js",
+    "static/css/main.a1586cd1.chunk.css",
+    "static/js/main.76a7ea9f.chunk.js"
+  ]
+}
