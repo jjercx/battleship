@@ -3,8 +3,8 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import createSagaMiddleware from "redux-saga";
-import rootSaga from "app/saga";
-import rootReducer from "app/reducer";
+import rootSaga from "app/sagas";
+import rootReducer from "app/reducers";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -14,7 +14,7 @@ const persistConfig = {
   key: "root",
   storage,
   timeout: 0,
-  blacklist: ["ui"],
+  whitelist: [],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

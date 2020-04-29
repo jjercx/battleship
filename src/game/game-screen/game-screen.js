@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Grid from "game/grid";
 import Stat from "game/stat";
-import shipData from "./data";
-import Ship from "game/ship";
 import ShipItem from "game/ship-item/ship-item";
 import Header from "app/header";
+import { connect } from "react-redux";
+import { getShips, getLoading } from "game/game.reducer";
+import * as actions from "game/game.actions";
 
 const Container = styled.div`
   padding-bottom: 20px;
@@ -43,32 +44,40 @@ const Column = styled.div`
   justify-content: center;
 `;
 
-const ships = [];
-shipData.forEach(({ count, size }) => {
-  [...Array(count)].forEach((_, i) => {
-    ships.push(new Ship(size));
-  });
+const GameScreen = ({ loading, ships, size = 10, gameSetup }) => {
+  useEffect(() => {
+    gameSetup({ size });
+  }, [gameSetup, size]);
+
+  if (loading) {
+    return null;
+  }
+
+  return (
+    <Container>
+      <Header />
+      <Row>
+        <Column>
+          <StatPanel>
+            <Stat value={0} title="Hits" color="red"></Stat>
+            <Stat value={0} title="Shots" color="green"></Stat>
+            <Stat value={0} title="Turns" color="blue"></Stat>
+          </StatPanel>
+          <ShipPanel>
+            {ships.map(ship => (
+              <ShipItem ship={ship} key={ship.id}></ShipItem>
+            ))}
+          </ShipPanel>
+        </Column>
+        <Grid size={size} />
+      </Row>
+    </Container>
+  );
+};
+
+const mapStateToProps = state => ({
+  loading: getLoading(state),
+  ships: getShips(state),
 });
 
-const GameScreen = ({ size = 10 }) => (
-  <Container>
-    <Header />
-    <Row>
-      <Column>
-        <StatPanel>
-          <Stat value={0} title="Hits" color="red"></Stat>
-          <Stat value={0} title="Shots" color="green"></Stat>
-          <Stat value={0} title="Turns" color="blue"></Stat>
-        </StatPanel>
-        <ShipPanel>
-          {ships.map(ship => (
-            <ShipItem ship={ship} key={ship.id}></ShipItem>
-          ))}
-        </ShipPanel>
-      </Column>
-      <Grid size={size} />
-    </Row>
-  </Container>
-);
-
-export default GameScreen;
+export default connect(mapStateToProps, actions)(GameScreen);
