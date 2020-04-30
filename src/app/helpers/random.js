@@ -1,5 +1,3 @@
-// integers between 0 (inclusive) and num (exclusive)
-// => [ 0 , num )
 export const randomNumber = num => Math.floor(Math.random() * Math.floor(num));
 
 export const randomShuffle = array =>
