@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShipItem /> with ship matches snapshot 1`] = `
+<div
+  className="sc-AxjAm kmbHis"
+>
+  <img
+    className="sc-AxirZ jLuRBF"
+    size={4}
+    src="aircraft.png"
+  />
+  <div
+    className="sc-AxiKw VdQH"
+  />
+  <div
+    className="sc-AxiKw VdQH"
+  />
+  <div
+    className="sc-AxiKw VdQH"
+  />
+  <div
+    className="sc-AxiKw VdQH"
+  />
+</div>
+`;
+
+exports[`<ShipItem /> without ship matches snapshot 1`] = `null`;

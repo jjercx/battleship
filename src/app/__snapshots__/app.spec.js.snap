@@ -1,0 +1,581 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> matches snapshot 1`] = `
+<div
+  className="sc-fznyAO hPdevK"
+>
+  <div
+    className="sc-fzpans bmiFGw"
+  >
+    <span
+      className="sc-fzplWN gtePgS"
+    >
+      BATTLESHIP
+    </span>
+  </div>
+  <div
+    className="sc-fzokOt ePPJgj"
+  >
+    <div
+      className="sc-fzqBZW eZzmsg"
+    >
+      <div
+        className="sc-fznKkj jzGAiS"
+      >
+        <div
+          className="sc-AxgMl kDmWxr"
+        >
+          <span
+            className="sc-AxheI emrIIm"
+          >
+            0
+          </span>
+          <span
+            className="sc-Axmtr jfKBn"
+          >
+            Hits
+          </span>
+        </div>
+        <div
+          className="sc-AxgMl kDmWxr"
+        >
+          <span
+            className="sc-AxheI emrIIm"
+          >
+            0
+          </span>
+          <span
+            className="sc-Axmtr jfKBn"
+          >
+            Shots
+          </span>
+        </div>
+        <div
+          className="sc-AxgMl kDmWxr"
+        >
+          <span
+            className="sc-AxheI emrIIm"
+          >
+            0
+          </span>
+          <span
+            className="sc-Axmtr jfKBn"
+          >
+            Turns
+          </span>
+        </div>
+      </div>
+      <div
+        className="sc-fznZeY bsHBnb"
+      />
+    </div>
+    <div
+      className="sc-AxiKw gXEHVN"
+    >
+      <div
+        className="sc-AxhCb fbTkIv"
+      />
+      <span
+        className="sc-AxhUy isbwv"
+      >
+        1
+      </span>
+      <span
+        className="sc-AxhUy ePvftW"
+      >
+        2
+      </span>
+      <span
+        className="sc-AxhUy ivRVlV"
+      >
+        3
+      </span>
+      <span
+        className="sc-AxhUy iAjzsI"
+      >
+        4
+      </span>
+      <span
+        className="sc-AxhUy fjWwpT"
+      >
+        5
+      </span>
+      <span
+        className="sc-AxhUy jQZAnu"
+      >
+        6
+      </span>
+      <span
+        className="sc-AxhUy eCOELZ"
+      >
+        7
+      </span>
+      <span
+        className="sc-AxhUy eHgiSM"
+      >
+        8
+      </span>
+      <span
+        className="sc-AxhUy ckRDYw"
+      >
+        9
+      </span>
+      <span
+        className="sc-AxhUy eRaIRt"
+      >
+        10
+      </span>
+      <span
+        className="sc-AxhUy dyEQxX"
+      >
+        A
+      </span>
+      <span
+        className="sc-AxhUy dyFDAe"
+      >
+        B
+      </span>
+      <span
+        className="sc-AxhUy dyFptV"
+      >
+        C
+      </span>
+      <span
+        className="sc-AxhUy dyGcwc"
+      >
+        D
+      </span>
+      <span
+        className="sc-AxhUy dyFOuP"
+      >
+        E
+      </span>
+      <span
+        className="sc-AxhUy dyGBwW"
+      >
+        F
+      </span>
+      <span
+        className="sc-AxhUy dyCpqh"
+      >
+        G
+      </span>
+      <span
+        className="sc-AxhUy dyDcso"
+      >
+        H
+      </span>
+      <span
+        className="sc-AxhUy bHcXCU"
+      >
+        I
+      </span>
+      <span
+        className="sc-AxhUy bHBmhd"
+      >
+        J
+      </span>
+      <div
+        className="sc-AxjAm bfhnsn"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm qlTme"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gTiLjF"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm genrdw"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iVUlNL"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm igYRHC"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm jjqrTB"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iuuXNs"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm cGxBlk"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm dMskV"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm bfhaUm"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm qlgjX"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gTiyLE"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gemEbp"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iVTZpK"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm igYeFv"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm jjqfvA"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iuukLl"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm cGxNJl"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm dMfMU"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm bfiLQR"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm qnrKI"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gThmLb"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gelSES"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iVTOsF"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm igYumw"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm jjqPoH"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iuvviy"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm cGxYGq"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm dMPGb"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm bfizsQ"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm qmEIB"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gThana"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gelfCL"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iVTBUE"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm igXHkp"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm jjqCQG"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iuuIgr"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm cGyler"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm dMDia"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm bfilpf"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm qmRiW"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gThNmN"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gemtgE"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iVTnQT"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm igXTKK"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm jjrpQt"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iuvVKk"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm cGyzic"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm dNqhN"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm bfhYRe"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm qmegP"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gThAOM"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gelGex"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iVTbsS"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm igXgID"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm jjrdss"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iuviId"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm cGyLGd"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm dNdJM"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm bfjQaV"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm qovUM"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gTkmOP"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm geoSIG"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iVWOwt"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm ihbuqk"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm jjnPkT"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iusveK"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm cGzcQu"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm dNTQf"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm bfjDCU"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm qnISF"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm gTkaqO"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm geofGz"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iVWBYs"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm ihaHod"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm jjnCMS"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iurIcD"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm cGzpov"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm dNHse"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm ctIGlA"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm kpQUwF"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm LUvYy"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iIcKjD"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm JRUVM"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iGajgR"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm jkkkSm"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm fQWPEv"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm hAIKnH"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm ctaoOe"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm ctAjHt"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm kpsFSw"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm LLZur"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iHEvFu"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm JJyrF"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm iFBUCI"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm jkbOof"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm fQyBam"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm hARgRO"
+        onClick={[Function]}
+      />
+      <div
+        className="sc-AxjAm csRSjX"
+        onClick={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;

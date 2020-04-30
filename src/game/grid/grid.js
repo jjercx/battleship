@@ -29,23 +29,29 @@ const Letter = styled.span`
   grid-row-start: ${props => props.row};
 `;
 
-export default ({ size }) => (
-  <Grid>
-    <Background />
-    {[...Array(size)].map((_, col) => (
-      <Letter key={col} row={1} col={col + 2}>
-        {col + 1}
-      </Letter>
-    ))}
-    {[...Array(size)].map((_, row) => (
-      <Letter key={row} col={1} row={row + 2}>
-        {String.fromCharCode(A_CHAR_CODE + row)}
-      </Letter>
-    ))}
-    {[...Array(size)].map((_, row) =>
-      [...Array(size)].map((_, col) => (
-        <Tile row={row} col={col} key={`${row}-${col}`} />
-      ))
-    )}
-  </Grid>
-);
+export default ({ size }) => {
+  if (!size) {
+    return null;
+  }
+
+  return (
+    <Grid>
+      <Background />
+      {[...Array(size)].map((_, col) => (
+        <Letter key={col} row={1} col={col + 2}>
+          {col + 1}
+        </Letter>
+      ))}
+      {[...Array(size)].map((_, row) => (
+        <Letter key={row} col={1} row={row + 2}>
+          {String.fromCharCode(A_CHAR_CODE + row)}
+        </Letter>
+      ))}
+      {[...Array(size)].map((_, row) =>
+        [...Array(size)].map((_, col) => (
+          <Tile row={row} col={col} key={`${row}-${col}`} />
+        ))
+      )}
+    </Grid>
+  );
+};

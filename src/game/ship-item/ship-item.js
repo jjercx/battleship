@@ -33,15 +33,21 @@ const HitPoint = styled.div`
     props.isHit ? props.theme.red : props.theme.green};
 `;
 
-export default ({ ship }) => (
-  <Container>
-    <ShipImage
-      size={ship.size}
-      src={ship.image}
-      isAlive={ship.isAlive()}
-    ></ShipImage>
-    {[...Array(ship.size)].map((_, i) => (
-      <HitPoint key={i} isHit={ship.hits > i}></HitPoint>
-    ))}
-  </Container>
-);
+export default ({ ship }) => {
+  if (!ship) {
+    return null;
+  }
+
+  return (
+    <Container>
+      <ShipImage
+        size={ship.size}
+        src={ship.image}
+        isAlive={ship.isAlive()}
+      ></ShipImage>
+      {[...Array(ship.size)].map((_, i) => (
+        <HitPoint key={i} isHit={ship.hits > i}></HitPoint>
+      ))}
+    </Container>
+  );
+};

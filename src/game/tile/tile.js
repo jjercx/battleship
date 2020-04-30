@@ -21,7 +21,7 @@ const Token = styled.div`
   background-size: cover;
 `;
 
-const Tile = ({ row, col, tileTouch, cell }) => {
+export const Tile = ({ row, col, tileTouch, cell }) => {
   const [touched, setTouched] = useState(false);
 
   const handleClick = () => {
