@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import assets from "./assets";
 
 const Container = styled.div`
   display: flex;
@@ -42,7 +43,7 @@ export default ({ ship }) => {
     <Container>
       <ShipImage
         size={ship.size}
-        src={ship.image}
+        src={assets[ship.type]}
         isAlive={ship.isAlive()}
       ></ShipImage>
       {[...Array(ship.size)].map((_, i) => (

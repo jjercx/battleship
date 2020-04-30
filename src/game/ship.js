@@ -1,27 +1,31 @@
-import aircraft from "game/ship-item/assets/aircraft.png";
-import battleship from "game/ship-item/assets/battleship.png";
-import submarine from "game/ship-item/assets/submarine.png";
-import carriership from "game/ship-item/assets/carriership.png";
 import { randomString } from "app/helpers/random";
 
 export default class Ship {
-  constructor({ id, size, hits, image }) {
+  constructor({ id, size, hits, type } = {}) {
+    if (!size) {
+      throw Error("ship size is required");
+    }
+
+    if (size < 1 || size > 4) {
+      throw Error("ship size invalid");
+    }
+
     this.id = id || this.getId();
     this.size = size;
     this.hits = hits || 0;
-    this.image = image || this.getImage();
+    this.type = type || this.getImage();
   }
 
   getImage() {
     switch (this.size) {
       case 4:
-        return aircraft;
+        return "aircraft";
       case 3:
-        return battleship;
+        return "battleship";
       case 2:
-        return submarine;
+        return "submarine";
       case 1:
-        return carriership;
+        return "carriership";
       default:
         console.error("Invalid ship size");
         return "";
