@@ -13,10 +13,10 @@ export default class Ship {
     this.id = id || this.getId();
     this.size = size;
     this.hits = hits || 0;
-    this.type = type || this.getImage();
+    this.type = type || this.getType();
   }
 
-  getImage() {
+  getType() {
     switch (this.size) {
       case 4:
         return "aircraft";
@@ -33,7 +33,7 @@ export default class Ship {
   }
 
   hit() {
-    if (this.hits < this.size) {
+    if (this.isAlive()) {
       this.hits += 1;
     }
   }
