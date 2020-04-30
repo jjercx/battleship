@@ -32,6 +32,16 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -49,6 +59,8 @@
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/preset-create-react-app": "^2.1.1",
-    "@storybook/react": "^5.3.18"
+    "@storybook/react": "^5.3.18",
+    "@types/jest": "^25.2.1",
+    "jest-extended": "^0.11.5"
   }
 }
