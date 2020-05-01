@@ -5,7 +5,7 @@ import assets from "./assets";
 const Container = styled.div`
   display: flex;
   align-items: flex-end;
-  margin: 5px 10px;
+  padding: 5px 10px;
 `;
 
 const ShipImage = styled.img`
