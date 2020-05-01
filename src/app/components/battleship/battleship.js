@@ -6,16 +6,19 @@ import theme from "app/utils/theme";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "app/utils/store";
+import { BrowserRouter } from "react-router-dom";
 
 const Battleship = () => (
   <ThemeProvider theme={theme}>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <Switch>
-          <Route path="/">
-            <GameScreen />
-          </Route>
-        </Switch>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/">
+              <GameScreen />
+            </Route>
+          </Switch>{" "}
+        </BrowserRouter>
       </PersistGate>
     </Provider>
   </ThemeProvider>
