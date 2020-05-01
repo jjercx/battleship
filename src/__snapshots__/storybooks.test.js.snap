@@ -1,0 +1,665 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Grid Default 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-AxgMl kBYjtK"
+  >
+    <div
+      className="sc-AxheI dZSOiq"
+    />
+    <span
+      className="sc-Axmtr PxDyc"
+    >
+      1
+    </span>
+    <span
+      className="sc-Axmtr BINN"
+    >
+      2
+    </span>
+    <span
+      className="sc-Axmtr hpskm"
+    >
+      3
+    </span>
+    <span
+      className="sc-Axmtr kHPgYT"
+    >
+      4
+    </span>
+    <span
+      className="sc-Axmtr hdoSdA"
+    >
+      5
+    </span>
+    <span
+      className="sc-Axmtr gosXtl"
+    >
+      6
+    </span>
+    <span
+      className="sc-Axmtr easIKi"
+    >
+      7
+    </span>
+    <span
+      className="sc-Axmtr dlwNZT"
+    >
+      8
+    </span>
+    <span
+      className="sc-Axmtr ggVwXT"
+    >
+      9
+    </span>
+    <span
+      className="sc-Axmtr honPYO"
+    >
+      10
+    </span>
+    <span
+      className="sc-Axmtr etYguI"
+    >
+      A
+    </span>
+    <span
+      className="sc-Axmtr etXtsB"
+    >
+      B
+    </span>
+    <span
+      className="sc-Axmtr etXHyK"
+    >
+      C
+    </span>
+    <span
+      className="sc-Axmtr etWUwD"
+    >
+      D
+    </span>
+    <span
+      className="sc-Axmtr etXixQ"
+    >
+      E
+    </span>
+    <span
+      className="sc-Axmtr etWvvJ"
+    >
+      F
+    </span>
+    <span
+      className="sc-Axmtr euaHCy"
+    >
+      G
+    </span>
+    <span
+      className="sc-Axmtr etZUAr"
+    >
+      H
+    </span>
+    <span
+      className="sc-Axmtr jggOWH"
+    >
+      I
+    </span>
+    <span
+      className="sc-Axmtr jfIAsy"
+    >
+      J
+    </span>
+    <div
+      className="sc-AxhCb hyihMI"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb fMxUPx"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb bcIRJa"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kGuokL"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWQSQg"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb jlgFSV"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kbWUya"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb iqmHAP"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb OkUrf"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWnLTe"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb hyhuKB"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb fMxIrw"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb bcIeGT"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kGubMK"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWQfNZ"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb jlgtuU"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kbWhvT"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb iqmvcO"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb OkHTe"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWnYrf"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb hygJoe"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb fMwwqT"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb bcKqhE"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kGvMJp"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWRqlm"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb jlhdob"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kbWxcU"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb iqmkfJ"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb OkwVZ"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWnoxY"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb hyfWlX"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb fMwjSS"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb bcJDfx"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kGvAlo"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWQDjf"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb jlgQQa"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kbVKaN"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb iqlXHI"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb OkkxY"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWnAVZ"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb hyhjPQ"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb fMwWSF"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb bcJPFS"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kGvmhD"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWRQMY"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb jlhDPN"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kbVWBi"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb iqlJDX"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb OjWun"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWmNWm"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb hygwNJ"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb fMwKuE"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb bcJcDL"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kGuZJC"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWRdKR"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb jlhrrM"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kbVjzb"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb iqlxfW"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb OjJWm"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWnaun"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb hyfFea"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb fMvsgP"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb bcHqdQ"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kGsMFB"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWOqhy"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb jledkn"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kbZxgI"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb iqpkjx"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb OjsLV"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWmknU"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb hyeSbT"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb fMvfIO"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb bcGDbJ"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kGsAhA"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWNDfr"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb jldQMm"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kbYKeB"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb iqoXLw"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb OjgnU"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kWmwLV"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb jffiJD"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb iIktii"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb QhYFt"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb tnjdY"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kOVTZr"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb ksbexW"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb dHnTkB"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb dktdJg"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb cWwDFU"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kxgUgZ"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb jeGUfu"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb iIbWEb"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb PJKbk"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb teMzR"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kOxFvi"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb krSHTP"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb dGPEGs"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb dkkHeZ"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb cWohbN"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-AxhCb kxpqLg"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Header Default 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-AxirZ gShnhs"
+  >
+    <span
+      className="sc-AxiKw gYzdGX"
+    >
+      BATTLESHIP
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Ship Item Aircraft 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-AxmLO cSsiOf"
+  >
+    <img
+      className="sc-fzozJi gfEtKz"
+      size={4}
+      src="aircraft.png"
+    />
+    <div
+      className="sc-fzoLsD hxaZGB"
+    />
+    <div
+      className="sc-fzoLsD hxaZGB"
+    />
+    <div
+      className="sc-fzoLsD hxaZGB"
+    />
+    <div
+      className="sc-fzoLsD hxaZGB"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Ship Item Battleship 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-AxmLO cSsiOf"
+  >
+    <img
+      className="sc-fzozJi gfEtKz"
+      size={3}
+      src="battleship.png"
+    />
+    <div
+      className="sc-fzoLsD hxaZGB"
+    />
+    <div
+      className="sc-fzoLsD hxaZGB"
+    />
+    <div
+      className="sc-fzoLsD hxaZGB"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Ship Item Carriership 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-AxmLO cSsiOf"
+  >
+    <img
+      className="sc-fzozJi gfEtKz"
+      size={1}
+      src="carriership.png"
+    />
+    <div
+      className="sc-fzoLsD hxaZGB"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Ship Item Submarine 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-AxmLO cSsiOf"
+  >
+    <img
+      className="sc-fzozJi gfEtKz"
+      size={2}
+      src="submarine.png"
+    />
+    <div
+      className="sc-fzoLsD hxaZGB"
+    />
+    <div
+      className="sc-fzoLsD hxaZGB"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Stat Default 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-fznKkj dsRnMl"
+  >
+    <div
+      className="sc-fzpans DoiQQ"
+    >
+      <span
+        className="sc-fzplWN iyluzC"
+      >
+        10
+      </span>
+      <span
+        className="sc-fznyAO FULts"
+      >
+        Title
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tile Default 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-fznZeY dnNvs"
+  >
+    <div
+      className="sc-AxhCb RilZE"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
