@@ -4,12 +4,12 @@ import Game from "game/models/game";
 import { gameReady, gameUpdate } from "game/redux/game.actions";
 import { getCell, getShip, getShots, getHits, getTurns } from "./game.reducer";
 
-function* gameSetup({ payload: boardSize }) {
+export function* onGameSetup({ payload: boardSize }) {
   const { ships, board } = Game.setup(boardSize);
   yield put(gameReady({ ships, board }));
 }
 
-function* tileTouch({ payload: { row, col } }) {
+export function* onTileTouch({ payload: { row, col } }) {
   const shipId = yield select(getCell, row, col);
   const ship = yield select(getShip, shipId);
 
@@ -32,6 +32,6 @@ function* tileTouch({ payload: { row, col } }) {
 }
 
 export default [
-  takeLatest(GAME_SETUP, gameSetup),
-  takeEvery(TILE_TOUCH, tileTouch),
+  takeLatest(GAME_SETUP, onGameSetup),
+  takeEvery(TILE_TOUCH, onTileTouch),
 ];
