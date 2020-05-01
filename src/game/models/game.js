@@ -40,7 +40,7 @@ export default class Game {
     Object.values(ships).forEach(ship => {
       const { row, col, h, v } = Game.randomPosition(board, ship);
       for (let k = 0; k < ship.size; k++) {
-        board[row + k * h][col + k * v] = ship.id;
+        board[row + k * v][col + k * h] = ship.id;
       }
     });
   };
@@ -61,8 +61,8 @@ export default class Game {
         let valid = true;
 
         for (let k = 0; k < ship.size; k++) {
-          const newRow = row + k * h;
-          const newCol = col + k * v;
+          const newRow = row + k * v;
+          const newCol = col + k * h;
 
           if (newRow >= boardSize || newRow < 0) {
             valid = false;
