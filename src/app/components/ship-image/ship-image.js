@@ -5,7 +5,6 @@ import assets from "./assets";
 const ShipImage = styled.img`
   --size: 20px;
   height: calc(var(--size));
-  margin-right: 10px;
   ${props =>
     props.isAlive
       ? css`
@@ -18,6 +17,6 @@ const ShipImage = styled.img`
         `}
 `;
 
-export default ({ ship }) => (
-  <ShipImage src={assets[ship.type]} isAlive={ship.isAlive()} />
+export default ({ ship, ...props }) => (
+  <ShipImage {...props} src={assets[ship.type]} isAlive={ship.isAlive()} />
 );

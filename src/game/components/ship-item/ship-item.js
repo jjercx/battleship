@@ -6,6 +6,10 @@ const Container = styled.div`
   display: flex;
   align-items: flex-end;
   padding: 5px 10px;
+
+  .ship-image {
+    margin-right: 10px;
+  }
 `;
 
 const HitPoint = styled.div`
@@ -25,7 +29,7 @@ export default ({ ship }) => {
 
   return (
     <Container>
-      <ShipImage ship={ship} />
+      <ShipImage ship={ship} className="ship-image" />
       {[...Array(ship.size)].map((_, i) => (
         <HitPoint key={i} isHit={ship.hits > i}></HitPoint>
       ))}
