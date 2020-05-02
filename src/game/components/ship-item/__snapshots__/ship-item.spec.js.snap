@@ -2,11 +2,10 @@
 
 exports[`<ShipItem /> with ship matches snapshot 1`] = `
 <div
-  className="sc-AxjAm kCxwVb"
+  className="sc-AxirZ dpYoRU"
 >
   <img
-    className="sc-AxirZ jLuRBF"
-    size={4}
+    className="sc-AxjAm bRpWvi"
     src="aircraft.png"
   />
   <div
