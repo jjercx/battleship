@@ -2,7 +2,7 @@ import React from "react";
 import Grid from "game/components/grid";
 
 export default {
-  title: "Grid",
+  title: "game/Grid",
   component: Grid,
   excludeStories: /.*Data$/,
 };

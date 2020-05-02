@@ -3,7 +3,7 @@ import ShipItem from "game/components/ship-item";
 import Ship from "game/models/ship";
 
 export default {
-  title: "Ship Item",
+  title: "game/Ship Item",
   component: ShipItem,
 };
 
