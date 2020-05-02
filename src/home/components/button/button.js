@@ -12,10 +12,12 @@ const Container = styled.div`
   }
 `;
 
-export default ({ text, onClick, ...props }) => {
+export const Button = ({ text, onClick, ...props }) => {
   return (
     <Container onClick={onClick} {...props}>
       {text.toUpperCase()}
     </Container>
   );
 };
+
+export default Button;

@@ -1,12 +1,14 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import GameScreen from "game/components/game-screen";
 import { ThemeProvider } from "styled-components";
 import theme from "app/utils/theme";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "app/utils/store";
-import { BrowserRouter } from "react-router-dom";
+import GameModeScreen from "game-mode/components/game-mode-screen";
+import HomeScreen from "home/components/home-screen/home-screen";
+import * as routes from "app/constants/routes";
 
 const Battleship = () => (
   <ThemeProvider theme={theme}>
@@ -14,10 +16,16 @@ const Battleship = () => (
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
           <Switch>
-            <Route path="/">
+            <Route path={routes.GAME_MODE}>
+              <GameModeScreen />
+            </Route>
+            <Route path={routes.GAME}>
               <GameScreen />
             </Route>
-          </Switch>{" "}
+            <Route path={routes.HOME}>
+              <HomeScreen />
+            </Route>
+          </Switch>
         </BrowserRouter>
       </PersistGate>
     </Provider>
