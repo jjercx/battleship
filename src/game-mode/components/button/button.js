@@ -1,23 +1,34 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Container = styled.div`
   display: inline-block;
   padding: 10px;
   color: white;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
-  border: 6px solid white;
-  &:hover {
-    color: ${props => props.theme.green};
-    border-color: ${props => props.theme.green};
-  }
+  border: 3px solid white;
+
+  ${props =>
+    props.isDisabled
+      ? css`
+          opacity: 0.3;
+          color: white;
+          border-color: white;
+          cursor: default;
+        `
+      : css`
+          &:hover {
+            color: ${props => props.theme.green};
+            border-color: ${props => props.theme.green};
+          }
+        `}
 `;
 
-export default ({ text, onClick, ...props }) => {
+export default ({ text, onClick, isDisabled, ...props }) => {
   return (
-    <Container onClick={onClick} {...props}>
+    <Container onClick={onClick} isDisabled={isDisabled} {...props}>
       {text.toUpperCase()}
     </Container>
   );

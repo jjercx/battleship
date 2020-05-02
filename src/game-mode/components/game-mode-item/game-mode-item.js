@@ -23,7 +23,7 @@ const Container = styled.div`
 const ShipContainer = styled.div`
   width: 150px;
   height: 100px;
-  border: 2px solid ${props => props.theme.green};
+  border: 2px solid white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,6 +33,7 @@ const ShipContainer = styled.div`
     props.isSelected &&
     css`
       background-color: ${props => props.theme.green}22;
+      border-color: ${props => props.theme.green};
     `}
 
   .ship-image {
@@ -46,6 +47,7 @@ const Title = styled.span`
   margin: 10px;
   font-weight: bold;
   color: ${props => props.theme.green};
+  /* color: white; */
   font-size: 24px;
 `;
 
@@ -56,29 +58,28 @@ const TurnsLabel = styled.span`
   text-align: center;
 `;
 
-export default ({
-  text = "",
-  onClick,
-  gameMode,
-  selectedGameMode,
-  ...props
-}) => {
+export default ({ onClick, gameMode, selectedGameMode, ...props }) => {
   const getTurnLabel = () => `${gameMode.turnLabel ?? gameMode.turns} turns`;
   if (!gameMode) {
     return null;
   }
 
+  const isSelected = selectedGameMode === gameMode;
+
+  const handleClick = () => {
+    if (!isSelected) {
+      onClick(gameMode);
+    }
+  };
+
   return (
-    <Container onClick={onClick} {...props}>
+    <Container onClick={handleClick} className="game-mode-item" {...props}>
       <Content>
-        <ShipContainer
-          className="ship-container"
-          isSelected={selectedGameMode === gameMode.name}
-        >
+        <ShipContainer className="ship-container" isSelected={isSelected}>
           <ShipImage ship={gameMode.ship} className="ship-image" />
           <TurnsLabel>{getTurnLabel()}</TurnsLabel>
         </ShipContainer>
-        <Title>{text.toUpperCase()}</Title>
+        <Title>{gameMode.name.toUpperCase()}</Title>
       </Content>
     </Container>
   );
