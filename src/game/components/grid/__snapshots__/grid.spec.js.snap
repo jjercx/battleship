@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Grid /> with size matches snapshot 1`] = `null`;
+
+exports[`<Grid /> without size matches snapshot 1`] = `null`;

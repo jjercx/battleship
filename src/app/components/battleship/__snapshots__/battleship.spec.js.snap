@@ -1,0 +1,684 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Battleship/> matches snapshot 1`] = `
+Array [
+  <div
+    className="sc-fznyAO hPdevK"
+  >
+    <div
+      className="sc-fzpans bmiFGw"
+    >
+      <span
+        className="sc-fzplWN gtePgS"
+      >
+        BATTLESHIP
+      </span>
+    </div>
+    <div
+      className="sc-fzokOt ePPJgj"
+    >
+      <div
+        className="sc-fzqBZW eZzmsg"
+      >
+        <div
+          className="sc-fznKkj jzGAiS"
+        >
+          <div
+            className="sc-AxgMl kDmWxr"
+          >
+            <span
+              className="sc-AxheI emrIIm"
+            >
+              0
+            </span>
+            <span
+              className="sc-Axmtr jfKBn"
+            >
+              Hits
+            </span>
+          </div>
+          <div
+            className="sc-AxgMl kDmWxr"
+          >
+            <span
+              className="sc-AxheI emrIIm"
+            >
+              0
+            </span>
+            <span
+              className="sc-Axmtr jfKBn"
+            >
+              Shots
+            </span>
+          </div>
+          <div
+            className="sc-AxgMl kDmWxr"
+          >
+            <span
+              className="sc-AxheI emrIIm"
+            >
+              0
+            </span>
+            <span
+              className="sc-Axmtr jfKBn"
+            >
+              Turns
+            </span>
+          </div>
+        </div>
+        <div
+          className="sc-fznZeY bsHBnb"
+        />
+      </div>
+      <div
+        className="sc-AxiKw gXEHVN"
+      >
+        <div
+          className="sc-AxhCb fbTkIv"
+        />
+        <span
+          className="sc-AxhUy isbwv"
+        >
+          1
+        </span>
+        <span
+          className="sc-AxhUy ePvftW"
+        >
+          2
+        </span>
+        <span
+          className="sc-AxhUy ivRVlV"
+        >
+          3
+        </span>
+        <span
+          className="sc-AxhUy iAjzsI"
+        >
+          4
+        </span>
+        <span
+          className="sc-AxhUy fjWwpT"
+        >
+          5
+        </span>
+        <span
+          className="sc-AxhUy jQZAnu"
+        >
+          6
+        </span>
+        <span
+          className="sc-AxhUy eCOELZ"
+        >
+          7
+        </span>
+        <span
+          className="sc-AxhUy eHgiSM"
+        >
+          8
+        </span>
+        <span
+          className="sc-AxhUy ckRDYw"
+        >
+          9
+        </span>
+        <span
+          className="sc-AxhUy eRaIRt"
+        >
+          10
+        </span>
+        <span
+          className="sc-AxhUy dyEQxX"
+        >
+          A
+        </span>
+        <span
+          className="sc-AxhUy dyFDAe"
+        >
+          B
+        </span>
+        <span
+          className="sc-AxhUy dyFptV"
+        >
+          C
+        </span>
+        <span
+          className="sc-AxhUy dyGcwc"
+        >
+          D
+        </span>
+        <span
+          className="sc-AxhUy dyFOuP"
+        >
+          E
+        </span>
+        <span
+          className="sc-AxhUy dyGBwW"
+        >
+          F
+        </span>
+        <span
+          className="sc-AxhUy dyCpqh"
+        >
+          G
+        </span>
+        <span
+          className="sc-AxhUy dyDcso"
+        >
+          H
+        </span>
+        <span
+          className="sc-AxhUy bHcXCU"
+        >
+          I
+        </span>
+        <span
+          className="sc-AxhUy bHBmhd"
+        >
+          J
+        </span>
+        <div
+          className="sc-AxjAm cgJYNz"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm jdGtza"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm jjSQjV"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm iVHWEQ"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm hrHJPD"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm cZivci"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm bhjVKV"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm SZcfQ"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm bmZXAE"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm iDQQft"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm cHeVNi"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm khnqyL"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm kkygWc"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm jzezSd"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm hScGPm"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm ecPsbT"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm chPmxc"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm bwvFtd"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm muGOx"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm jEwgRA"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm bRDtcl"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm MFzck"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm ipejIT"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm louKRi"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm bEfqVB"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm zhwVA"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm fKRcsH"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm iKhDAW"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm fQHeiq"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm bScnoj"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm crYqbU"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm hOACmt"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm jpJAva"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm gAJKPX"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm ceAnVk"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm hBcAfJ"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm gLwteO"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm dWwDzL"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm eQbNwj"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm cSHEaq"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm kAFKer"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm gigvqW"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm PXeTd"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm BMlnY"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm knhHXH"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm fUItkm"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm jBfHbN"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm jmUNwI"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm jGVIRw"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm fIqRXp"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm lbaHea"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm hlNsqH"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm bQCvFk"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm bfiOBl"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm kNCEXq"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm gYpqjX"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm kBKXNU"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm jQrqJV"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm iGqsfp"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm gIWiJw"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm kKjHwN"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm jFlNwM"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm boSor"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm daFtwG"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm eFLIZV"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm dANOZU"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm cJkKon"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm fIBlwC"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm dtRJdW"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm kKIBIL"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm lkEEww"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm frLhhZ"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm bbUjay"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm jCqcUr"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm fggFZE"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm kCISkd"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm dJQbau"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm UQlvr"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm ctmsrP"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm vSiVW"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm hUWLPY"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm iGewDt"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm eIMFK"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm ggYaHD"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm kKGGFg"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm gsHTF"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm bUScge"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm hXhqhX"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm gZlICv"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm swmNy"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm ffNRRl"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm hIWmQU"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm kIBKGX"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm dgjIua"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm hVxMGt"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm kyGhGc"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm bjpqIv"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm eWsXUu"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm hKOuae"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+        <div
+          className="sc-AxjAm kWpkOL"
+          data-testid="tile"
+          onClick={[Function]}
+        />
+      </div>
+    </div>
+  </div>,
+  " ",
+]
+`;
