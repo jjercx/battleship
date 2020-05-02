@@ -10,6 +10,7 @@ import { EMPTY } from "app/constants/game";
 const Container = styled.div`
   grid-column-start: ${props => props.col + 2};
   grid-row-start: ${props => props.row + 2};
+  background-color: ${props => props.theme.green}22;
 `;
 
 const Token = styled.div`
@@ -32,8 +33,8 @@ export const Tile = ({ row, col, tileTouch, cell }) => {
   };
 
   return (
-    <Container onClick={handleClick} row={row} col={col}>
-      {touched && <Token empty={cell === EMPTY} />}
+    <Container onClick={handleClick} row={row} col={col} data-testid="tile">
+      {touched && <Token empty={cell === EMPTY} data-testid="token" />}
     </Container>
   );
 };

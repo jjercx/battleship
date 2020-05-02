@@ -2,7 +2,8 @@
 
 exports[`<Tile /> matches snapshot 1`] = `
 <div
-  className="sc-AxjAm bUfWrX"
+  className="sc-AxjAm eaUxXp"
+  data-testid="tile"
   onClick={[Function]}
 />
 `;

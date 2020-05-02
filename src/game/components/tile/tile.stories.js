@@ -15,6 +15,6 @@ const Container = styled.div`
 
 export const Default = () => (
   <Container>
-    <Tile />
+    <Tile row={0} col={0} />
   </Container>
 );
