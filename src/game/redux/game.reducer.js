@@ -19,7 +19,7 @@ export const getTurns = ({ game: { turns } }) => turns;
 export const getCell = ({ game: { board } }, row, col) =>
   board && board[row][col];
 
-const initialState = {
+export const initialState = {
   loading: false,
   board: null,
   ships: {},
