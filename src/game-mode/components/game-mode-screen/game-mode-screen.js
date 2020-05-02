@@ -72,15 +72,16 @@ const custom = GameMode.custom();
 
 export default function GameModeScreen() {
   const [selectedGameMode, setSelectedGameMode] = useState(null);
-  const [turns, setTurns] = useState("");
+  const [turns, setTurns] = useState(75);
 
   const handleClick = gameMode => {
     setSelectedGameMode(gameMode);
-    setTurns(gameMode.turns);
+    setTurns(gameMode.turns ?? 75);
   };
 
   const handleInput = event => {
     const text = event.target.value;
+
     if (text === "" || (/^\d*$/.test(text) && parseInt(text) > 0)) {
       setTurns(text);
     }
