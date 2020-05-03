@@ -13,11 +13,13 @@ import {
   getTurns,
   getHits,
   getSize,
+  getGameStatus,
 } from "game/redux/game.reducer";
 import * as actions from "game/redux/game.actions";
 import { compose } from "redux";
 import { withRouter } from "react-router-dom";
 import * as routes from "app/constants/routes";
+import * as gameStatus from "game/constants/game-status";
 
 const Container = styled.div`
   position: relative;
@@ -64,6 +66,7 @@ export const GameScreen = ({
   shots,
   turns,
   history,
+  status,
 }) => {
   if (loading) {
     return null;
@@ -94,7 +97,10 @@ export const GameScreen = ({
         </Column>
         <Grid size={size} />
       </Row>
-      <Modal title="game over">
+      <Modal
+        title={status === gameStatus.WON ? "you won!" : "game over"}
+        isVisible={status !== gameStatus.IN_PROGRESS}
+      >
         <Column>
           <Button text="play again" onClick={handlePlayAgain} />
           <Button text="change mode" onClick={handleChangeMode} />
@@ -113,6 +119,7 @@ const mapStateToProps = state => ({
   turns: getTurns(state),
   hits: getHits(state),
   size: getSize(state),
+  status: getGameStatus(state),
 });
 
 export default compose(

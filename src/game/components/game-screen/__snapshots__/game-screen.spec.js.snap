@@ -55,5 +55,46 @@ exports[`<GameScreen /> with initialState matches snapshot 1`] = `
       />
     </div>
   </div>
+  <div
+    className="sc-fzplWN cuIFqN"
+  >
+    <div
+      className="sc-fznyAO boBqiY"
+    >
+      <div
+        className="sc-fzpans ceqZuQ title"
+      >
+        GAME OVER
+      </div>
+      <div
+        className="sc-fzoyAV lgOAXd"
+      >
+        <div
+          className="sc-fznKkj fvmZxi"
+          onClick={[Function]}
+        >
+          PLAY AGAIN
+        </div>
+        <div
+          className="sc-fznKkj fvmZxi"
+          onClick={[Function]}
+        >
+          CHANGE MODE
+        </div>
+        <div
+          className="sc-fznKkj fvmZxi"
+          onClick={[Function]}
+        >
+          LEADERBOARD
+        </div>
+        <div
+          className="sc-fznKkj fvmZxi"
+          onClick={[Function]}
+        >
+          EXIT
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
