@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "app/utils/theme";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-import { store, persistor } from "app/utils/store";
+import { store, persistor } from "app/redux/store";
 import GameModeScreen from "game-mode/components/game-mode-screen";
 import HomeScreen from "home/components/home-screen/home-screen";
 import * as routes from "app/constants/routes";

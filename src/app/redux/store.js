@@ -19,9 +19,17 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
+const composeEnhancers = composeWithDevTools({
+  serialize: {
+    options: {
+      infinity: true,
+    },
+  },
+});
+
 const store = createStore(
   persistedReducer,
-  composeWithDevTools(applyMiddleware(...middlewares))
+  composeEnhancers(applyMiddleware(...middlewares))
 );
 const persistor = persistStore(store);
 

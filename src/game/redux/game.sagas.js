@@ -2,9 +2,17 @@ import { takeLatest, put, takeEvery, select } from "redux-saga/effects";
 import { GAME_SETUP, TILE_TOUCH } from "app/constants/action-types";
 import Game from "game/models/game";
 import { gameReady, gameUpdate } from "game/redux/game.actions";
-import { getCell, getShip, getShots, getHits, getTurns } from "./game.reducer";
+import {
+  getCell,
+  getShip,
+  getShots,
+  getHits,
+  getTurns,
+  getSize,
+} from "./game.reducer";
 
-export function* onGameSetup({ payload: boardSize }) {
+export function* onGameSetup() {
+  const boardSize = yield select(getSize);
   const { ships, board } = Game.setup(boardSize);
   yield put(gameReady({ ships, board }));
 }

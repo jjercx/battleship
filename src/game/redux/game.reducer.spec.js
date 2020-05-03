@@ -1,11 +1,22 @@
 import gameReducer from "./game.reducer";
 import { gameSetup, gameReady, gameUpdate } from "./game.actions";
+import GameMode from "game-mode/models/game-mode";
 
 describe("game reducer", () => {
   describe("on GAME_SETUP", () => {
     it("sets game loading", () => {
-      const state = gameReducer(undefined, gameSetup({ size: 10 }));
+      const state = gameReducer(
+        undefined,
+        gameSetup({ gameMode: GameMode.easy() })
+      );
       expect(state.loading).toBeTrue();
+    });
+
+    it("sets gameMode and turns", () => {
+      const gameMode = GameMode.easy();
+      const state = gameReducer(undefined, gameSetup({ gameMode }));
+      expect(state.gameMode).toBe(gameMode);
+      expect(state.turns).toBe(gameMode.turns);
     });
   });
   describe("on GAME_READY", () => {

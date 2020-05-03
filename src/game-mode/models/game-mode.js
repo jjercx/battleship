@@ -37,4 +37,9 @@ export default class GameMode {
       ship,
     });
   }
+
+  setTurns(turns) {
+    this.turns = turns;
+    return this;
+  }
 }

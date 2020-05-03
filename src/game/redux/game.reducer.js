@@ -16,6 +16,8 @@ export const getShots = ({ game: { shots } }) => shots;
 
 export const getTurns = ({ game: { turns } }) => turns;
 
+export const getSize = ({ game: { size } }) => size;
+
 export const getCell = ({ game: { board } }, row, col) =>
   board && board[row][col];
 
@@ -26,12 +28,16 @@ export const initialState = {
   hits: 0,
   shots: 0,
   turns: 0,
+  size: 10,
 };
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {
-    case GAME_SETUP:
-      return { ...state, loading: true };
+    case GAME_SETUP: {
+      const gameMode = payload;
+      const { turns } = gameMode;
+      return { ...state, loading: true, gameMode, turns };
+    }
     case GAME_READY: {
       const { ships, board } = payload;
       return { ...state, loading: false, board, ships };

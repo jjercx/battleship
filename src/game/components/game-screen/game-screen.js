@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import Grid from "game/components/grid";
 import Stat from "game/components/stat";
@@ -11,6 +11,7 @@ import {
   getShots,
   getTurns,
   getHits,
+  getSize,
 } from "game/redux/game.reducer";
 import * as actions from "game/redux/game.actions";
 
@@ -49,19 +50,7 @@ const Column = styled.div`
   justify-content: center;
 `;
 
-const GameScreen = ({
-  loading,
-  ships,
-  size = 10,
-  gameSetup,
-  hits,
-  shots,
-  turns,
-}) => {
-  useEffect(() => {
-    gameSetup({ size });
-  }, [gameSetup, size]);
-
+const GameScreen = ({ loading, ships, size, hits, shots, turns }) => {
   if (loading) {
     return null;
   }
@@ -94,6 +83,7 @@ const mapStateToProps = state => ({
   shots: getShots(state),
   turns: getTurns(state),
   hits: getHits(state),
+  size: getSize(state),
 });
 
 export default connect(mapStateToProps, actions)(GameScreen);

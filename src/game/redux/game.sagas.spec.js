@@ -3,7 +3,14 @@ import Ship from "game/models/ship";
 import { onGameSetup, onTileTouch } from "./game.sagas";
 import { put, select } from "redux-saga/effects";
 import { gameReady, gameUpdate } from "./game.actions";
-import { getCell, getShip, getShots, getHits, getTurns } from "./game.reducer";
+import {
+  getCell,
+  getShip,
+  getShots,
+  getHits,
+  getTurns,
+  getSize,
+} from "./game.reducer";
 import { cloneableGenerator } from "@redux-saga/testing-utils";
 
 jest.mock("game/models/game");
@@ -30,12 +37,19 @@ describe("game.sagas.js", () => {
     it("puts GAME_READY action", () => {
       const gen = onGameSetup({ payload: 1 });
       const res = setup();
-      expect(gen.next().value).toEqual(put(gameReady(res)));
+
+      expect(gen.next().value).toEqual(select(getSize));
+
+      const boardSize = 1;
+      expect(gen.next(boardSize).value).toEqual(put(gameReady(res)));
+
       expect(gameSetupMock).toHaveBeenCalledTimes(1);
+      expect(gameSetupMock).toHaveBeenCalledWith(boardSize);
     });
 
     it("calls Game.setup", () => {
       const gen = onGameSetup({ payload: 1 });
+      gen.next();
       gen.next();
       expect(gameSetupMock).toHaveBeenCalledTimes(1);
     });

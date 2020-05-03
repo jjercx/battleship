@@ -5,9 +5,9 @@ import {
   GAME_UPDATE,
 } from "app/constants/action-types";
 
-export const gameSetup = ({ size }) => ({
+export const gameSetup = ({ gameMode }) => ({
   type: GAME_SETUP,
-  payload: size,
+  payload: gameMode,
 });
 
 export const gameReady = ({ ships, board }) => ({

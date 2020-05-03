@@ -4,6 +4,11 @@ import Title from "../title";
 import Button from "../button";
 import GameModeItem from "../game-mode-item";
 import GameMode from "game-mode/models/game-mode";
+import { withRouter } from "react-router-dom";
+import * as routes from "app/constants/routes";
+import * as actions from "game/redux/game.actions";
+import { compose } from "redux";
+import { connect } from "react-redux";
 
 const Container = styled.div`
   height: 100vh;
@@ -70,7 +75,7 @@ const medium = GameMode.medium();
 const hard = GameMode.hard();
 const custom = GameMode.custom();
 
-export default function GameModeScreen() {
+export const GameModeScreen = ({ history, gameSetup }) => {
   const [selectedGameMode, setSelectedGameMode] = useState(null);
   const [turns, setTurns] = useState(75);
 
@@ -85,6 +90,11 @@ export default function GameModeScreen() {
     if (text === "" || (/^\d*$/.test(text) && parseInt(text) > 0)) {
       setTurns(text);
     }
+  };
+
+  const handleReady = () => {
+    gameSetup({ gameMode: selectedGameMode.setTurns(turns) });
+    history.push(routes.GAME);
   };
 
   return (
@@ -127,8 +137,14 @@ export default function GameModeScreen() {
             )}
           </InputContainer>
         </MainContent>
-        <Button text="ready" isDisabled={!selectedGameMode || !turns}></Button>
+        <Button
+          text="ready"
+          isDisabled={!selectedGameMode || !turns}
+          onClick={handleReady}
+        ></Button>
       </Content>
     </Container>
   );
-}
+};
+
+export default compose(withRouter, connect(undefined, actions))(GameModeScreen);

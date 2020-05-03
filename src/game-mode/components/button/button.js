@@ -27,8 +27,13 @@ const Container = styled.div`
 `;
 
 export default ({ text, onClick, isDisabled, ...props }) => {
+  const handleClick = () => {
+    if (!isDisabled) {
+      onClick();
+    }
+  };
   return (
-    <Container onClick={onClick} isDisabled={isDisabled} {...props}>
+    <Container onClick={handleClick} isDisabled={isDisabled} {...props}>
       {text.toUpperCase()}
     </Container>
   );
