@@ -3,8 +3,10 @@ import {
   GAME_READY,
   GAME_UPDATE,
 } from "app/constants/action-types";
+import Ship from "game/models/ship";
 
-export const getShips = ({ game: { ships } }) => Object.values(ships);
+export const getShips = ({ game: { ships } }) =>
+  Object.values(ships).map(ship => new Ship(ship));
 
 export const getShip = ({ game: { ships } }, shipId) => ships[shipId];
 

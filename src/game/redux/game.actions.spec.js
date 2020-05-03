@@ -53,4 +53,13 @@ describe("game actions", () => {
       expectedAction
     );
   });
+
+  it("notifies game ended", () => {
+    const win = false;
+    const expectedAction = {
+      type: types.GAME_END,
+      payload: { win },
+    };
+    expect(actions.gameEnd({ win })).toEqual(expectedAction);
+  });
 });

@@ -1,8 +1,8 @@
 import Game from "game/models/game";
 import Ship from "game/models/ship";
-import { onGameSetup, onTileTouch } from "./game.sagas";
+import { onGameSetup, onTileTouch, watchForGameEnd } from "./game.sagas";
 import { put, select } from "redux-saga/effects";
-import { gameReady, gameUpdate } from "./game.actions";
+import { gameReady, gameUpdate, gameEnd } from "./game.actions";
 import {
   getCell,
   getShip,
@@ -10,6 +10,7 @@ import {
   getHits,
   getTurns,
   getSize,
+  getShips,
 } from "./game.reducer";
 import { cloneableGenerator } from "@redux-saga/testing-utils";
 
@@ -139,6 +140,51 @@ describe("game.sagas.js", () => {
 
       onTileWithShip();
       onTileEmpty();
+    });
+  });
+
+  describe("* watchForGameEnd", () => {
+    describe("when all ships are dead", () => {
+      it("wins game", () => {
+        const gen = watchForGameEnd();
+        expect(gen.next().value).toEqual(select(getShips));
+
+        const allDeadShips = [new Ship({ size: 1, hits: 1 })];
+        expect(gen.next(allDeadShips).value).toEqual(
+          put(gameEnd({ win: true }))
+        );
+
+        expect(gen.next().done).toBeTrue();
+      });
+    });
+
+    describe("when all turns are taken", () => {
+      it("loses game", () => {
+        const gen = watchForGameEnd();
+        expect(gen.next().value).toEqual(select(getShips));
+
+        const shipsAlive = [new Ship({ size: 1, hits: 0 })];
+        expect(gen.next(shipsAlive).value).toEqual(select(getTurns));
+
+        const noMoreTurns = 0;
+        expect(gen.next(noMoreTurns).value).toEqual(
+          put(gameEnd({ win: false }))
+        );
+
+        expect(gen.next().done).toBeTrue();
+      });
+    });
+    describe("else", () => {
+      it("does nothing", () => {
+        const gen = watchForGameEnd();
+        expect(gen.next().value).toEqual(select(getShips));
+
+        const shipsAlive = [new Ship({ size: 1, hits: 0 })];
+        expect(gen.next(shipsAlive).value).toEqual(select(getTurns));
+
+        const moreTurns = 1;
+        expect(gen.next(moreTurns).done).toBeTrue();
+      });
     });
   });
 });
