@@ -9,6 +9,7 @@ import { store, persistor } from "app/redux/store";
 import GameModeScreen from "game-mode/components/game-mode-screen";
 import HomeScreen from "home/components/home-screen/home-screen";
 import * as routes from "app/constants/routes";
+import OptionsScreen from "options/components/options-screen/options-screen";
 
 const Battleship = () => (
   <ThemeProvider theme={theme}>
@@ -21,6 +22,9 @@ const Battleship = () => (
             </Route>
             <Route path={routes.GAME}>
               <GameScreen />
+            </Route>
+            <Route path={routes.OPTIONS}>
+              <OptionsScreen />
             </Route>
             <Route path={routes.HOME}>
               <HomeScreen />

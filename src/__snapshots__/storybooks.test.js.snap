@@ -1299,6 +1299,7 @@ exports[`Storyshots home/HomeScreen Default 1`] = `
       </div>
       <div
         className="sc-AxirZ kgiUck"
+        onClick={[Function]}
       >
         OPTIONS
       </div>
