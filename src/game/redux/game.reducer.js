@@ -38,6 +38,7 @@ export const initialState = {
   size: 2,
   // size: 10,
   status: null,
+  gameMode: null,
 };
 
 export default (state = initialState, { type, payload }) => {

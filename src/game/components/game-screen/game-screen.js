@@ -17,7 +17,7 @@ import {
 } from "game/redux/game.reducer";
 import * as actions from "game/redux/game.actions";
 import { compose } from "redux";
-import { withRouter } from "react-router-dom";
+import { withRouter, Redirect } from "react-router-dom";
 import * as routes from "app/constants/routes";
 import * as gameStatus from "game/constants/game-status";
 
@@ -67,18 +67,21 @@ export const GameScreen = ({
   turns,
   history,
   status,
+  gameSetup,
 }) => {
+  const handleExit = () => history.replace(routes.HOME);
+
+  const handleLeaderboard = () => history.replace(routes.LEADERBOARD);
+
+  const handlePlayAgain = () => history.replace(routes.GAME_MODE);
+
+  if (!status || !turns) {
+    return <Redirect to={routes.GAME_MODE} />;
+  }
+
   if (loading) {
     return null;
   }
-
-  const handleExit = () => history.replace(routes.HOME);
-
-  const handlePlayAgain = () => console.log("handlePlayAgain");
-
-  const handleLeaderboard = () => console.log("handleLeaderboard");
-
-  const handleChangeMode = () => console.log("handleChangeMode");
 
   return (
     <Container>
@@ -103,7 +106,6 @@ export const GameScreen = ({
       >
         <Column>
           <Button text="play again" onClick={handlePlayAgain} />
-          <Button text="change mode" onClick={handleChangeMode} />
           <Button text="leaderboard" onClick={handleLeaderboard} />
           <Button text="exit" onClick={handleExit} />
         </Column>

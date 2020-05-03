@@ -31,7 +31,7 @@ export function* onTileTouch({ payload: { row, col } }) {
   let turns = yield select(getTurns, shipId);
 
   shots += 1;
-  turns -= 1; // TODO: handle infinity and negatives
+  turns -= 1;
 
   if (ship) {
     ship.hit();
