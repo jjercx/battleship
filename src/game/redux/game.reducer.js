@@ -3,6 +3,7 @@ import {
   GAME_READY,
   GAME_UPDATE,
   GAME_END,
+  SET_SIZE,
 } from "app/constants/action-types";
 import Ship from "game/models/ship";
 import * as gameStatus from "../constants/game-status";
@@ -41,6 +42,10 @@ export const initialState = {
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {
+    case SET_SIZE: {
+      const { size } = payload;
+      return { ...state, size };
+    }
     case GAME_SETUP: {
       const gameMode = payload;
       const { turns } = gameMode;
