@@ -5,11 +5,17 @@ import radar from "./assets/radargrid.png";
 import { A_CHAR_CODE } from "app/constants/game";
 
 const Grid = styled.div`
-  --size: 8vmin;
+  --square-size: 8vmin;
   margin: 10px;
   display: grid;
-  grid-template-columns: calc(var(--size) / 2) repeat(10, var(--size));
-  grid-template-rows: calc(var(--size) / 2) repeat(10, var(--size));
+  grid-template-columns: calc(var(--square-size) / 2) repeat(
+      ${props => props.size},
+      var(--square-size)
+    );
+  grid-template-rows: calc(var(--square-size) / 2) repeat(
+      ${props => props.size},
+      var(--square-size)
+    );
 `;
 
 const Background = styled.div`
@@ -17,8 +23,8 @@ const Background = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  grid-column: 2 / span 10;
-  grid-row: 2 / span 10;
+  grid-column: 2 / span ${props => props.size};
+  grid-row: 2 / span ${props => props.size};
 `;
 
 const Letter = styled.span`
@@ -35,8 +41,8 @@ export default ({ size }) => {
   }
 
   return (
-    <Grid>
-      <Background />
+    <Grid size={size}>
+      <Background size={size} />
       {[...Array(size)].map((_, col) => (
         <Letter key={col} row={1} col={col + 2}>
           {col + 1}

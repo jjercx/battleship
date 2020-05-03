@@ -11,6 +11,8 @@ const Container = styled.div`
   grid-column-start: ${props => props.col + 2};
   grid-row-start: ${props => props.row + 2};
   background-color: ${props => props.theme.green}22;
+  box-shadow: inset 0px 0px 0px 1px ${props => props.theme.green};
+  box-sizing: border-box;
 `;
 
 const Token = styled.div`
