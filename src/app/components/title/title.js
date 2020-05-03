@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  color: #00ff00;
+  color: ${props => props.theme.lightGreen};
   font-weight: bold;
   font-size: 50px;
 `;

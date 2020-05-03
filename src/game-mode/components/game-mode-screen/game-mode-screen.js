@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Title from "../title";
+import Title from "app/components/title";
 import Button from "../button";
 import GameModeItem from "../game-mode-item";
 import GameMode from "game-mode/models/game-mode";

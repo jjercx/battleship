@@ -8,23 +8,23 @@ exports[`<Battleship/> matches snapshot 1`] = `
     className="sc-fznWOq BKMx"
   >
     <div
-      className="sc-fzpmMD icWeRk title"
+      className="sc-fznxKY eBcwVQ title"
     >
       BATTLESHIP
     </div>
     <div
-      className="sc-fznxKY cGhcbE"
+      className="sc-fznKkj hxmZlM"
       onClick={[Function]}
     >
       NEW GAME
     </div>
     <div
-      className="sc-fznxKY cGhcbE"
+      className="sc-fznKkj hxmZlM"
     >
       LEADERBOARD
     </div>
     <div
-      className="sc-fznxKY cGhcbE"
+      className="sc-fznKkj hxmZlM"
     >
       OPTIONS
     </div>

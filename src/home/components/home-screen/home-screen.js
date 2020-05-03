@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Title from "home/components/title";
-import Button from "home/components/button";
+import Button from "app/components/button";
 import * as routes from "app/constants/routes";
 import { withRouter } from "react-router-dom";
 

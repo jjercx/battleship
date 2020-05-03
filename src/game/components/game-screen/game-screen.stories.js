@@ -1,5 +1,5 @@
 import React from "react";
-import GameScreen from "./game-screen";
+import { GameScreen } from "./game-screen";
 
 export default {
   title: "game/GameScreen",

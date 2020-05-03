@@ -1,5 +1,5 @@
 import React from "react";
-import GameScreen from "./game-screen";
+import { GameScreen } from "./game-screen";
 import renderer from "react-test-renderer";
 import { createStore } from "redux";
 import rootReducer from "app/redux/reducers";

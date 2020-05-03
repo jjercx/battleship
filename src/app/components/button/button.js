@@ -12,6 +12,7 @@ const Container = styled.div`
   }
 `;
 
+// FIXME: text should be children instead of prop
 export const Button = ({ text, onClick, ...props }) => {
   return (
     <Container onClick={onClick} {...props}>

@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Grid from "game/components/grid";
 import Stat from "game/components/stat";
 import ShipItem from "game/components/ship-item/ship-item";
-import Header from "app/components/header";
+import Modal from "app/components/modal";
+import Button from "app/components/button";
 import { connect } from "react-redux";
 import {
   getShips,
@@ -14,14 +15,18 @@ import {
   getSize,
 } from "game/redux/game.reducer";
 import * as actions from "game/redux/game.actions";
+import { compose } from "redux";
+import { withRouter } from "react-router-dom";
+import * as routes from "app/constants/routes";
 
 const Container = styled.div`
+  position: relative;
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   background-color: ${props => props.theme.black};
 `;
 
@@ -48,16 +53,32 @@ const Column = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 `;
 
-const GameScreen = ({ loading, ships, size, hits, shots, turns }) => {
+export const GameScreen = ({
+  loading,
+  ships = [],
+  size,
+  hits,
+  shots,
+  turns,
+  history,
+}) => {
   if (loading) {
     return null;
   }
 
+  const handleExit = () => history.replace(routes.HOME);
+
+  const handlePlayAgain = () => console.log("handlePlayAgain");
+
+  const handleLeaderboard = () => console.log("handleLeaderboard");
+
+  const handleChangeMode = () => console.log("handleChangeMode");
+
   return (
     <Container>
-      <Header />
       <Row>
         <Column>
           <StatPanel>
@@ -73,6 +94,14 @@ const GameScreen = ({ loading, ships, size, hits, shots, turns }) => {
         </Column>
         <Grid size={size} />
       </Row>
+      <Modal title="game over">
+        <Column>
+          <Button text="play again" onClick={handlePlayAgain} />
+          <Button text="change mode" onClick={handleChangeMode} />
+          <Button text="leaderboard" onClick={handleLeaderboard} />
+          <Button text="exit" onClick={handleExit} />
+        </Column>
+      </Modal>
     </Container>
   );
 };
@@ -86,4 +115,7 @@ const mapStateToProps = state => ({
   size: getSize(state),
 });
 
-export default connect(mapStateToProps, actions)(GameScreen);
+export default compose(
+  connect(mapStateToProps, actions),
+  withRouter
+)(GameScreen);
