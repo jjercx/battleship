@@ -1098,10 +1098,16 @@ exports[`Storyshots game-mode/GameModeScreen Default 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fzoXWK hfRKIb"
+    className="sc-fzpmMD EFVBQ"
   >
     <div
-      className="sc-fzpmMD bfTJXD"
+      className="sc-fzoXWK EPFe"
+      onClick={[Function]}
+    >
+      X
+    </div>
+    <div
+      className="sc-fznxKY icNVvD"
     >
       <div
         className="sc-AxgMl iluWPs title"
@@ -1109,13 +1115,13 @@ exports[`Storyshots game-mode/GameModeScreen Default 1`] = `
         GAME MODE
       </div>
       <div
-        className="sc-fznxKY gVOHtM"
+        className="sc-fznMAR fLOlXc"
       >
         <div
-          className="sc-fznMAR dAXQDs"
+          className="sc-fznWOq hGBxnn"
         >
           <div
-            className="sc-fznMAR dAXQDs"
+            className="sc-fznWOq hGBxnn"
           >
             <div
               className="sc-fzqARJ ggoIgy game-mode-item"
@@ -1173,7 +1179,7 @@ exports[`Storyshots game-mode/GameModeScreen Default 1`] = `
             </div>
           </div>
           <div
-            className="sc-fznMAR dAXQDs"
+            className="sc-fznWOq hGBxnn"
           >
             <div
               className="sc-fzqARJ ggoIgy game-mode-item"
@@ -1232,7 +1238,7 @@ exports[`Storyshots game-mode/GameModeScreen Default 1`] = `
           </div>
         </div>
         <div
-          className="sc-fznWOq eMWkWE"
+          className="sc-fzolEj cJRskT"
         />
       </div>
       <div
@@ -1276,13 +1282,13 @@ exports[`Storyshots home/HomeScreen Default 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fzoxKX IXneK"
+    className="sc-fzoKki bZyqLI"
   >
     <div
-      className="sc-fzoKki kEDozA"
+      className="sc-fzoYkl gnJqaz"
     >
       <div
-        className="sc-fzqPZZ kxteNN title"
+        className="sc-fzoxKX fWaYDY title"
       >
         BATTLESHIP
       </div>
@@ -1294,6 +1300,7 @@ exports[`Storyshots home/HomeScreen Default 1`] = `
       </div>
       <div
         className="sc-AxirZ kgiUck"
+        onClick={[Function]}
       >
         LEADERBOARD
       </div>
@@ -1313,7 +1320,7 @@ exports[`Storyshots home/Title Default 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fzqPZZ kxteNN"
+    className="sc-fzoxKX fWaYDY"
   >
     BATTLESHIP
   </div>

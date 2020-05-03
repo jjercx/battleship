@@ -28,12 +28,13 @@ const Content = styled.div`
 export const HomeScreen = ({ history }) => {
   const handleNewGame = () => history.push(routes.GAME_MODE);
   const handleOptions = () => history.push(routes.OPTIONS);
+  const handleLeaderboard = () => history.push(routes.LEADERBOARD);
   return (
     <Container>
       <Content>
         <Title text="battleship" className="title"></Title>
         <Button text="new game" onClick={handleNewGame}></Button>
-        <Button text="leaderboard"></Button>
+        <Button text="leaderboard" onClick={handleLeaderboard}></Button>
         <Button text="options" onClick={handleOptions}></Button>
       </Content>
     </Container>

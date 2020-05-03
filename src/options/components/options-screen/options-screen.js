@@ -7,6 +7,7 @@ import * as actions from "options/redux/options.actions";
 import { compose } from "redux";
 import { connect } from "react-redux";
 import { getSize } from "game/redux/game.reducer";
+import Close from "app/components/close";
 
 const Container = styled.div`
   height: 100vh;
@@ -51,20 +52,6 @@ const Input = styled.input`
 const InputLabel = styled.span`
   color: white;
   font-size: 24px;
-`;
-
-const Close = styled.div`
-  color: ${props => props.theme.green};
-  border: 2px solid ${props => props.theme.green};
-  font-size: 40px;
-  position: fixed;
-  top: 20px;
-  right: 50px;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 export const OptionsScreen = ({ history, size, setSize }) => {

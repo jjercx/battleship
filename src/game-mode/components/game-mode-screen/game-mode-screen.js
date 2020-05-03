@@ -9,6 +9,7 @@ import * as routes from "app/constants/routes";
 import * as actions from "game/redux/game.actions";
 import { compose } from "redux";
 import { connect } from "react-redux";
+import Close from "app/components/close";
 
 const Container = styled.div`
   height: 100vh;
@@ -97,8 +98,11 @@ export const GameModeScreen = ({ history, gameSetup }) => {
     history.push(routes.GAME);
   };
 
+  const handleClose = () => history.replace(routes.HOME);
+
   return (
     <Container>
+      <Close onClick={handleClose}>X</Close>
       <Content>
         <Title text="game mode" className="title"></Title>
         <MainContent>
