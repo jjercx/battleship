@@ -63,7 +63,7 @@ const GameScreen = ({ loading, ships, size, hits, shots, turns }) => {
           <StatPanel>
             <Stat value={hits} title="Hits"></Stat>
             <Stat value={shots} title="Shots"></Stat>
-            <Stat value={turns} title="Turns"></Stat>
+            <Stat value={turns === Infinity ? "∞" : turns} title="Turns"></Stat>
           </StatPanel>
           <ShipPanel>
             {ships.map(ship => (

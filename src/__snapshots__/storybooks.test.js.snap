@@ -1816,6 +1816,7 @@ exports[`Storyshots game-mode/GameModeScreen Default 1`] = `
       </div>
       <div
         className="sc-fzoXzr bJjUSf"
+        onClick={[Function]}
       >
         READY
       </div>
@@ -1866,6 +1867,7 @@ exports[`Storyshots home/HomeScreen Default 1`] = `
       </div>
       <div
         className="sc-fznWOq dacHVv"
+        onClick={[Function]}
       >
         NEW GAME
       </div>
