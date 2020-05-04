@@ -2,15 +2,16 @@ import * as actions from "./game.actions";
 import * as types from "app/constants/action-types";
 import { EMPTY } from "app/constants/game";
 import Ship from "game/models/ship";
+import GameMode from "game-mode/models/game-mode";
 
 describe("game actions", () => {
   it("requests setup for a game", () => {
-    const size = 10;
+    const gameMode = GameMode.easy();
     const expectedAction = {
       type: types.GAME_SETUP,
-      payload: size,
+      payload: gameMode,
     };
-    expect(actions.gameSetup({ size })).toEqual(expectedAction);
+    expect(actions.gameSetup({ gameMode })).toEqual(expectedAction);
   });
 
   it("notifies game setup is finished and it's ready to play", () => {
@@ -51,5 +52,14 @@ describe("game actions", () => {
     expect(actions.gameUpdate({ ship, shots, hits, turns })).toEqual(
       expectedAction
     );
+  });
+
+  it("notifies game ended", () => {
+    const win = false;
+    const expectedAction = {
+      type: types.GAME_END,
+      payload: { win },
+    };
+    expect(actions.gameEnd({ win })).toEqual(expectedAction);
   });
 });

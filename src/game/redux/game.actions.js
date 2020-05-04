@@ -3,11 +3,13 @@ import {
   GAME_SETUP,
   TILE_TOUCH,
   GAME_UPDATE,
+  GAME_END,
+  STORE_GAME_RECORD,
 } from "app/constants/action-types";
 
-export const gameSetup = ({ size }) => ({
+export const gameSetup = ({ gameMode }) => ({
   type: GAME_SETUP,
-  payload: size,
+  payload: gameMode,
 });
 
 export const gameReady = ({ ships, board }) => ({
@@ -29,4 +31,14 @@ export const tileTouch = ({ row, col }) => ({
 export const gameUpdate = ({ ship, shots, hits, turns }) => ({
   type: GAME_UPDATE,
   payload: { ship, shots, hits, turns },
+});
+
+export const gameEnd = ({ win }) => ({
+  type: GAME_END,
+  payload: { win },
+});
+
+export const storeGameRecord = ({ gameRecord }) => ({
+  type: STORE_GAME_RECORD,
+  payload: { gameRecord },
 });

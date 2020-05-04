@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import Grid from "game/components/grid";
 import Stat from "game/components/stat";
 import ShipItem from "game/components/ship-item/ship-item";
-import Header from "app/components/header";
+import Modal from "app/components/modal";
+import Button from "app/components/button";
 import { connect } from "react-redux";
 import {
   getShips,
@@ -11,16 +12,23 @@ import {
   getShots,
   getTurns,
   getHits,
+  getSize,
+  getGameStatus,
 } from "game/redux/game.reducer";
 import * as actions from "game/redux/game.actions";
+import { compose } from "redux";
+import { withRouter, Redirect } from "react-router-dom";
+import * as routes from "app/constants/routes";
+import * as gameStatus from "game/constants/game-status";
 
 const Container = styled.div`
+  position: relative;
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   background-color: ${props => props.theme.black};
 `;
 
@@ -47,20 +55,29 @@ const Column = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 `;
 
-const GameScreen = ({
+export const GameScreen = ({
   loading,
-  ships,
-  size = 10,
-  gameSetup,
+  ships = [],
+  size,
   hits,
   shots,
   turns,
+  history,
+  status,
+  gameSetup,
 }) => {
-  useEffect(() => {
-    gameSetup({ size });
-  }, [gameSetup, size]);
+  const handleExit = () => history.replace(routes.HOME);
+
+  const handleLeaderboard = () => history.replace(routes.LEADERBOARD);
+
+  const handlePlayAgain = () => history.replace(routes.GAME_MODE);
+
+  if (!status) {
+    return <Redirect to={routes.GAME_MODE} />;
+  }
 
   if (loading) {
     return null;
@@ -68,13 +85,12 @@ const GameScreen = ({
 
   return (
     <Container>
-      <Header />
       <Row>
         <Column>
           <StatPanel>
             <Stat value={hits} title="Hits"></Stat>
             <Stat value={shots} title="Shots"></Stat>
-            <Stat value={turns} title="Turns"></Stat>
+            <Stat value={turns === Infinity ? "∞" : turns} title="Turns"></Stat>
           </StatPanel>
           <ShipPanel>
             {ships.map(ship => (
@@ -84,6 +100,16 @@ const GameScreen = ({
         </Column>
         <Grid size={size} />
       </Row>
+      <Modal
+        title={status === gameStatus.WIN ? "you won!" : "game over"}
+        isVisible={status !== gameStatus.IN_PROGRESS}
+      >
+        <Column>
+          <Button text="play again" onClick={handlePlayAgain} />
+          <Button text="leaderboard" onClick={handleLeaderboard} />
+          <Button text="exit" onClick={handleExit} />
+        </Column>
+      </Modal>
     </Container>
   );
 };
@@ -94,6 +120,11 @@ const mapStateToProps = state => ({
   shots: getShots(state),
   turns: getTurns(state),
   hits: getHits(state),
+  size: getSize(state),
+  status: getGameStatus(state),
 });
 
-export default connect(mapStateToProps, actions)(GameScreen);
+export default compose(
+  connect(mapStateToProps, actions),
+  withRouter
+)(GameScreen);

@@ -2,9 +2,14 @@ import {
   GAME_SETUP,
   GAME_READY,
   GAME_UPDATE,
+  GAME_END,
+  SET_SIZE,
 } from "app/constants/action-types";
+import Ship from "game/models/ship";
+import * as gameStatus from "../constants/game-status";
 
-export const getShips = ({ game: { ships } }) => Object.values(ships);
+export const getShips = ({ game: { ships } }) =>
+  Object.values(ships).map(ship => new Ship(ship));
 
 export const getShip = ({ game: { ships } }, shipId) => ships[shipId];
 
@@ -16,6 +21,12 @@ export const getShots = ({ game: { shots } }) => shots;
 
 export const getTurns = ({ game: { turns } }) => turns;
 
+export const getSize = ({ game: { size } }) => size;
+
+export const getGameStatus = ({ game: { status } }) => status;
+
+export const getGameMode = ({ game: { gameMode } }) => gameMode;
+
 export const getCell = ({ game: { board } }, row, col) =>
   board && board[row][col];
 
@@ -26,15 +37,31 @@ export const initialState = {
   hits: 0,
   shots: 0,
   turns: 0,
+  size: 10,
+  status: null,
+  gameMode: null,
 };
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {
-    case GAME_SETUP:
-      return { ...state, loading: true };
+    case SET_SIZE: {
+      const { size } = payload;
+      return { ...state, size };
+    }
+    case GAME_SETUP: {
+      const gameMode = payload;
+      const { turns } = gameMode;
+      return { ...state, loading: true, gameMode, turns, shots: 0, hits: 0 };
+    }
     case GAME_READY: {
       const { ships, board } = payload;
-      return { ...state, loading: false, board, ships };
+      return {
+        ...state,
+        loading: false,
+        board,
+        ships,
+        status: gameStatus.IN_PROGRESS,
+      };
     }
     case GAME_UPDATE: {
       const { ship, shots, hits, turns } = payload;
@@ -52,6 +79,11 @@ export default (state = initialState, { type, payload }) => {
         hits: newHits,
         turns,
       };
+    }
+    case GAME_END: {
+      const { win } = payload;
+      const status = win ? gameStatus.WIN : gameStatus.LOSE;
+      return { ...state, status };
     }
     default:
       return state;

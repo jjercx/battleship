@@ -3,7 +3,7 @@ import Tile from "game/components/tile";
 import styled from "styled-components";
 
 export default {
-  title: "Tile",
+  title: "game/Tile",
   component: Tile,
 };
 

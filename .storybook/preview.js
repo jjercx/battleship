@@ -1,6 +1,6 @@
 import React from "react";
 import { addDecorator } from "@storybook/react";
-import { store, persistor } from "app/utils/store";
+import { store, persistor } from "app/redux/store";
 import { ThemeProvider } from "styled-components";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";

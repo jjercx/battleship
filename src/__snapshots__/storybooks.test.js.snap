@@ -1,612 +1,658 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Grid Default 1`] = `
+exports[`Storyshots app/Ship Image Aircraft 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <img
+    className="sc-AxhUy dWjoNZ"
+    src="aircraft.png"
+  />
+</div>
+`;
+
+exports[`Storyshots app/Ship Image Battleship 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <img
+    className="sc-AxhUy dWjoNZ"
+    src="battleship.png"
+  />
+</div>
+`;
+
+exports[`Storyshots app/Ship Image Carriership 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <img
+    className="sc-AxhUy dWjoNZ"
+    src="carriership.png"
+  />
+</div>
+`;
+
+exports[`Storyshots app/Ship Image Submarine 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <img
+    className="sc-AxhUy dWjoNZ"
+    src="submarine.png"
+  />
+</div>
+`;
+
+exports[`Storyshots game/Grid Default 1`] = `
 <div
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-AxgMl kBYjtK"
+    className="sc-AxmLO hhKCTA"
+    size={10}
   >
     <div
-      className="sc-AxheI dZSOiq"
+      className="sc-fzozJi eoxiOd"
+      size={10}
     />
     <span
-      className="sc-Axmtr PxDyc"
+      className="sc-fzoLsD iPnbQW"
     >
       1
     </span>
     <span
-      className="sc-Axmtr BINN"
+      className="sc-fzoLsD eijXTv"
     >
       2
     </span>
     <span
-      className="sc-Axmtr hpskm"
+      className="sc-fzoLsD cwSGcM"
     >
       3
     </span>
     <span
-      className="sc-Axmtr kHPgYT"
+      className="sc-fzoLsD csBbVZ"
     >
       4
     </span>
     <span
-      className="sc-Axmtr hdoSdA"
+      className="sc-fzoLsD dNIGXy"
     >
       5
     </span>
     <span
-      className="sc-Axmtr gosXtl"
+      className="sc-fzoLsD kwbmyT"
     >
       6
     </span>
     <span
-      className="sc-Axmtr easIKi"
+      className="sc-fzoLsD iGYfpM"
     >
       7
     </span>
     <span
-      className="sc-Axmtr dlwNZT"
+      className="sc-fzoLsD iCGBiZ"
     >
       8
     </span>
     <span
-      className="sc-Axmtr ggVwXT"
+      className="sc-fzoLsD bWDKUJ"
     >
       9
     </span>
     <span
-      className="sc-Axmtr honPYO"
+      className="sc-fzoLsD kFQpAI"
     >
       10
     </span>
     <span
-      className="sc-Axmtr etYguI"
+      className="sc-fzoLsD hufJsq"
     >
       A
     </span>
     <span
-      className="sc-Axmtr etXtsB"
+      className="sc-fzoLsD hufVQr"
     >
       B
     </span>
     <span
-      className="sc-Axmtr etXHyK"
+      className="sc-fzoLsD huemuE"
     >
       C
     </span>
     <span
-      className="sc-Axmtr etWUwD"
+      className="sc-fzoLsD hueySF"
     >
       D
     </span>
     <span
-      className="sc-Axmtr etXixQ"
+      className="sc-fzoLsD hueLvy"
     >
       E
     </span>
     <span
-      className="sc-Axmtr etWvvJ"
+      className="sc-fzoLsD hueXTz"
     >
       F
     </span>
     <span
-      className="sc-Axmtr euaHCy"
+      className="sc-fzoLsD hudikA"
     >
       G
     </span>
     <span
-      className="sc-Axmtr etZUAr"
+      className="sc-fzoLsD huduIB"
     >
       H
     </span>
     <span
-      className="sc-Axmtr jggOWH"
+      className="sc-fzoLsD gBCIAZ"
     >
       I
     </span>
     <span
-      className="sc-Axmtr jfIAsy"
+      className="sc-fzoLsD gBLffg"
     >
       J
     </span>
     <div
-      className="sc-AxhCb eOerbg"
+      className="sc-AxheI cLBCkG"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb cQYsJV"
+      className="sc-AxheI inqEND"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb kFjziC"
+      className="sc-AxheI GbrUg"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb eDPfJb"
+      className="sc-AxheI bAgKGV"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb kSCpxY"
+      className="sc-AxheI jbIuDi"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb iVwrgN"
+      className="sc-AxheI dobNHj"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb hswKiG"
+      className="sc-AxheI cJPxSc"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb brcqJf"
+      className="sc-AxheI dDUQER"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb eDPLKz"
+      className="sc-AxheI gCsqVp"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb kBEdxC"
+      className="sc-AxheI equbqQ"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb A-DKMt"
+      className="sc-AxheI fySJkr"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb drtpJE"
+      className="sc-AxheI dDqDIq"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fRyzhr"
+      className="sc-AxheI eFFqhJ"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fEuwvi"
+      className="sc-AxheI cHMjzQ"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb gFbJjl"
+      className="sc-AxheI zDSdX"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb jvRogw"
+      className="sc-AxheI jTxwaS"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb cELKhv"
+      className="sc-AxheI gJtwfF"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb crHHvm"
+      className="sc-AxheI eLApxM"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fekIKi"
+      className="sc-AxheI iGvFYI"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb kbjgxT"
+      className="sc-AxheI cmqMnx"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb bPJBZa"
+      className="sc-AxheI imfCNc"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb dgeYvj"
+      className="sc-AxheI IjOAN"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb imwKWk"
+      className="sc-AxheI VafNS"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fyDMkd"
+      className="sc-AxheI lomaJn"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb cdhEfK"
+      className="sc-AxheI fJIYAc"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb dtDaBT"
+      className="sc-AxheI jviTMJ"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb kQJSmw"
+      className="sc-AxheI BVYSu"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb icQTAp"
+      className="sc-AxheI kVhTNP"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb kfJcpt"
+      className="sc-AxheI dwqzCD"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb eObKDA"
+      className="sc-AxheI hItxtW"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb cTqyYL"
+      className="sc-AxheI gicnJJ"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb dGzVuS"
+      className="sc-AxheI eZuNhY"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb iPTojx"
+      className="sc-AxheI djHYr"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb gzjcWk"
+      className="sc-AxheI khGPPK"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb dgOBfv"
+      className="sc-AxheI dFFJwJ"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb dTXXBC"
+      className="sc-AxheI cwYiUY"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb eKMaN"
+      className="sc-AxheI kZBkBP"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb jdwkmw"
+      className="sc-AxheI jOCIUm"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb kGdZpc"
+      className="sc-AxheI IZsCS"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb enGNDR"
+      className="sc-AxheI kvKEtH"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb hJEpjk"
+      className="sc-AxheI hhQnAu"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fMyqRZ"
+      className="sc-AxheI bujGEv"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb hJJBay"
+      className="sc-AxheI hziqdo"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb bIphAX"
+      className="sc-AxheI itnIQd"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb hXcrpU"
+      className="sc-AxheI eFtJnu"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fZWsYJ"
+      className="sc-AxheI khiLQr"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb knWIqK"
+      className="sc-AxheI hgejhQ"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb emCoRj"
+      className="sc-AxheI iajBUF"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb hzpJSD"
+      className="sc-AxheI kYHcld"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb chIsgK"
+      className="sc-AxheI iMIMGE"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb dwdIUx"
+      className="sc-AxheI jVhuAf"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb gmTnRI"
+      className="sc-AxheI hZFoYe"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb cVYAZn"
+      className="sc-AxheI jqERV"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb cIUyne"
+      className="sc-AxheI jAThIY"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb dJBLbh"
+      className="sc-AxheI hsKQnf"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb gArpYs"
+      className="sc-AxheI fxiKLe"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fAlIpz"
+      className="sc-AxheI lfIhvt"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fnhFDq"
+      className="sc-AxheI jhPaNA"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb hZKGSm"
+      className="sc-AxheI bNoHPA"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb bHnvhb"
+      className="sc-AxheI gIFxDl"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb emyXdu"
+      className="sc-AxheI dSaAnE"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fCUtzD"
+      className="sc-AxheI hDAvAl"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fkQsRQ"
+      className="sc-AxheI ftyzTW"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb cwXufJ"
+      className="sc-AxheI exoLqv"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb kqWVAm"
+      className="sc-AxheI kihsGg"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb rWIxz"
+      className="sc-AxheI cElEtR"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb cCUARU"
+      className="sc-AxheI hsTolm"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb lexlEJ"
+      className="sc-AxheI gwJzHL"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb bncNUR"
+      className="sc-AxheI krHgCb"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb hkRfHU"
+      className="sc-AxheI doouUy"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fqfUdf"
+      className="sc-AxheI bNXlkl"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb gdpqzm"
+      className="sc-AxheI FpKIA"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fOmWfd"
+      className="sc-AxheI eBIcev"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb dxCKRQ"
+      className="sc-AxheI dqJAwS"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb fijbb"
+      className="sc-AxheI ieedCN"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb SrFxi"
+      className="sc-AxheI gVwDbc"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb dgrefh"
+      className="sc-AxheI gBcQvL"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb PGSRU"
+      className="sc-AxheI fqeoOi"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb bNxKUA"
+      className="sc-AxheI hEpZCq"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb gKwiIl"
+      className="sc-AxheI gbFBUj"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb cxNCpn"
+      className="sc-AxheI eazhsJ"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb dFglIa"
+      className="sc-AxheI imOtJo"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb gtdrlt"
+      className="sc-AxheI jZonZr"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb cjoxpI"
+      className="sc-AxheI HXheC"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb kXzqZb"
+      className="sc-AxheI smIAx"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb PwqSS"
+      className="sc-AxheI eEBURc"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb eCUbKZ"
+      className="sc-AxheI bKUckj"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb tfhPo"
+      className="sc-AxheI dIYEOq"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb eOtiyQ"
+      className="sc-AxheI hLgDSO"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb bdRBQZ"
+      className="sc-AxheI geVpJD"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb jMhusq"
+      className="sc-AxheI coyvQI"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb PXrJn"
+      className="sc-AxheI iswnmB"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb ovrow"
+      className="sc-AxheI enZVry"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb bxLLRZ"
+      className="sc-AxheI KvHz"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb gWxzDi"
+      className="sc-AxheI jVHGxs"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb jpJgtb"
+      className="sc-AxheI eKjOup"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb jNHLmY"
+      className="sc-AxheI hpbtbm"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb kWYfQB"
+      className="sc-AxheI dbLTrn"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb bZkoA-d"
+      className="sc-AxheI bvzTWz"
       data-testid="tile"
       onClick={[Function]}
     />
     <div
-      className="sc-AxhCb dTavPM"
+      className="sc-AxheI bfgqgW"
       data-testid="tile"
       onClick={[Function]}
     />
@@ -614,15 +660,15 @@ exports[`Storyshots Grid Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Header Default 1`] = `
+exports[`Storyshots game/Header Default 1`] = `
 <div
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-AxirZ gShnhs"
+    className="sc-AxiKw eZBBTM"
   >
     <span
-      className="sc-AxiKw gYzdGX"
+      className="sc-AxhCb gRgvjz"
     >
       BATTLESHIP
     </span>
@@ -630,117 +676,113 @@ exports[`Storyshots Header Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Ship Item Aircraft 1`] = `
+exports[`Storyshots game/Ship Item Aircraft 1`] = `
 <div
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-AxmLO cSsiOf"
+    className="sc-fzpans gAlxAH"
   >
     <img
-      className="sc-fzozJi gfEtKz"
-      size={4}
+      className="sc-AxhUy dWjoNZ ship-image"
       src="aircraft.png"
     />
     <div
-      className="sc-fzoLsD hxaZGB"
+      className="sc-fzplWN hTYAPM"
     />
     <div
-      className="sc-fzoLsD hxaZGB"
+      className="sc-fzplWN hTYAPM"
     />
     <div
-      className="sc-fzoLsD hxaZGB"
+      className="sc-fzplWN hTYAPM"
     />
     <div
-      className="sc-fzoLsD hxaZGB"
+      className="sc-fzplWN hTYAPM"
     />
   </div>
 </div>
 `;
 
-exports[`Storyshots Ship Item Battleship 1`] = `
+exports[`Storyshots game/Ship Item Battleship 1`] = `
 <div
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-AxmLO cSsiOf"
+    className="sc-fzpans gAlxAH"
   >
     <img
-      className="sc-fzozJi gfEtKz"
-      size={3}
+      className="sc-AxhUy dWjoNZ ship-image"
       src="battleship.png"
     />
     <div
-      className="sc-fzoLsD hxaZGB"
+      className="sc-fzplWN hTYAPM"
     />
     <div
-      className="sc-fzoLsD hxaZGB"
+      className="sc-fzplWN hTYAPM"
     />
     <div
-      className="sc-fzoLsD hxaZGB"
+      className="sc-fzplWN hTYAPM"
     />
   </div>
 </div>
 `;
 
-exports[`Storyshots Ship Item Carriership 1`] = `
+exports[`Storyshots game/Ship Item Carriership 1`] = `
 <div
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-AxmLO cSsiOf"
+    className="sc-fzpans gAlxAH"
   >
     <img
-      className="sc-fzozJi gfEtKz"
-      size={1}
+      className="sc-AxhUy dWjoNZ ship-image"
       src="carriership.png"
     />
     <div
-      className="sc-fzoLsD hxaZGB"
+      className="sc-fzplWN hTYAPM"
     />
   </div>
 </div>
 `;
 
-exports[`Storyshots Ship Item Submarine 1`] = `
+exports[`Storyshots game/Ship Item Submarine 1`] = `
 <div
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-AxmLO cSsiOf"
+    className="sc-fzpans gAlxAH"
   >
     <img
-      className="sc-fzozJi gfEtKz"
-      size={2}
+      className="sc-AxhUy dWjoNZ ship-image"
       src="submarine.png"
     />
     <div
-      className="sc-fzoLsD hxaZGB"
+      className="sc-fzplWN hTYAPM"
     />
     <div
-      className="sc-fzoLsD hxaZGB"
+      className="sc-fzplWN hTYAPM"
     />
   </div>
 </div>
 `;
 
-exports[`Storyshots Stat Default 1`] = `
+exports[`Storyshots game/Stat Default 1`] = `
 <div
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fznKkj dsRnMl"
+    className="sc-fzokOt dHGdsW"
   >
     <div
-      className="sc-fzpans DoiQQ"
+      className="sc-fznyAO cAvHKN"
     >
       <span
-        className="sc-fzplWN iyluzC"
+        className="sc-fznKkj gGvfJL"
       >
         10
       </span>
       <span
-        className="sc-fznyAO FULts"
+        className="sc-fznZeY husFzl"
       >
         Title
       </span>
@@ -749,18 +791,435 @@ exports[`Storyshots Stat Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tile Default 1`] = `
+exports[`Storyshots game/Tile Default 1`] = `
 <div
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fznZeY dnNvs"
+    className="sc-fzqBZW hwQDSW"
   >
     <div
-      className="sc-AxhCb eOerbg"
+      className="sc-AxheI cLBCkG"
       data-testid="tile"
       onClick={[Function]}
     />
+  </div>
+</div>
+`;
+
+exports[`Storyshots game-mode/Button Default 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-fzqNJr gOcRba"
+    onClick={[Function]}
+  >
+    READY
+  </div>
+</div>
+`;
+
+exports[`Storyshots game-mode/Game Mode Item Custom 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-fzoLag iOFjgv game-mode-item"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-fzoyAV kHTXvT"
+    >
+      <div
+        className="sc-fzoXzr bPGMnc ship-container"
+      >
+        <img
+          className="sc-AxhUy dWjoNZ ship-image"
+          src="submarine.png"
+        />
+        <span
+          className="sc-fznxsB FuIob"
+        >
+          X turns
+        </span>
+      </div>
+      <span
+        className="sc-fzpjYC cvDMYw"
+      >
+        CUSTOM
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots game-mode/Game Mode Item Easy 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-fzoLag iOFjgv game-mode-item"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-fzoyAV kHTXvT"
+    >
+      <div
+        className="sc-fzoXzr bPGMnc ship-container"
+      >
+        <img
+          className="sc-AxhUy dWjoNZ ship-image"
+          src="carriership.png"
+        />
+        <span
+          className="sc-fznxsB FuIob"
+        >
+          Infinite turns
+        </span>
+      </div>
+      <span
+        className="sc-fzpjYC cvDMYw"
+      >
+        EASY
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots game-mode/Game Mode Item Easy Selected 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-fzoLag iOFjgv game-mode-item"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-fzoyAV kHTXvT"
+    >
+      <div
+        className="sc-fzoXzr bPGMnc ship-container"
+      >
+        <img
+          className="sc-AxhUy dWjoNZ ship-image"
+          src="carriership.png"
+        />
+        <span
+          className="sc-fznxsB FuIob"
+        >
+          Infinite turns
+        </span>
+      </div>
+      <span
+        className="sc-fzpjYC cvDMYw"
+      >
+        EASY
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots game-mode/Game Mode Item Hard 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-fzoLag iOFjgv game-mode-item"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-fzoyAV kHTXvT"
+    >
+      <div
+        className="sc-fzoXzr bPGMnc ship-container"
+      >
+        <img
+          className="sc-AxhUy dWjoNZ ship-image"
+          src="aircraft.png"
+        />
+        <span
+          className="sc-fznxsB FuIob"
+        >
+          50 turns
+        </span>
+      </div>
+      <span
+        className="sc-fzpjYC cvDMYw"
+      >
+        HARD
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots game-mode/Game Mode Item Medium 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-fzoLag iOFjgv game-mode-item"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-fzoyAV kHTXvT"
+    >
+      <div
+        className="sc-fzoXzr bPGMnc ship-container"
+      >
+        <img
+          className="sc-AxhUy dWjoNZ ship-image"
+          src="battleship.png"
+        />
+        <span
+          className="sc-fznxsB FuIob"
+        >
+          100 turns
+        </span>
+      </div>
+      <span
+        className="sc-fzpjYC cvDMYw"
+      >
+        MEDIUM
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots game-mode/GameModeScreen Default 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-fznWqX ipYzXo"
+  >
+    <div
+      className="sc-fznJRM hAwyuG"
+      onClick={[Function]}
+    >
+      X
+    </div>
+    <div
+      className="sc-fzoiQi BfIJp"
+    >
+      <div
+        className="sc-AxgMl iluWPs title"
+      >
+        GAME MODE
+      </div>
+      <div
+        className="sc-fzqARJ gldWXk"
+      >
+        <div
+          className="sc-fzqNqU imHpqT"
+        >
+          <div
+            className="sc-fzqNqU imHpqT"
+          >
+            <div
+              className="sc-fzoLag iOFjgv game-mode-item"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-fzoyAV kHTXvT"
+              >
+                <div
+                  className="sc-fzoXzr bPGMnc ship-container"
+                >
+                  <img
+                    className="sc-AxhUy dWjoNZ ship-image"
+                    src="carriership.png"
+                  />
+                  <span
+                    className="sc-fznxsB FuIob"
+                  >
+                    Infinite turns
+                  </span>
+                </div>
+                <span
+                  className="sc-fzpjYC cvDMYw"
+                >
+                  EASY
+                </span>
+              </div>
+            </div>
+            <div
+              className="sc-fzoLag iOFjgv game-mode-item"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-fzoyAV kHTXvT"
+              >
+                <div
+                  className="sc-fzoXzr bPGMnc ship-container"
+                >
+                  <img
+                    className="sc-AxhUy dWjoNZ ship-image"
+                    src="battleship.png"
+                  />
+                  <span
+                    className="sc-fznxsB FuIob"
+                  >
+                    100 turns
+                  </span>
+                </div>
+                <span
+                  className="sc-fzpjYC cvDMYw"
+                >
+                  MEDIUM
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="sc-fzqNqU imHpqT"
+          >
+            <div
+              className="sc-fzoLag iOFjgv game-mode-item"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-fzoyAV kHTXvT"
+              >
+                <div
+                  className="sc-fzoXzr bPGMnc ship-container"
+                >
+                  <img
+                    className="sc-AxhUy dWjoNZ ship-image"
+                    src="aircraft.png"
+                  />
+                  <span
+                    className="sc-fznxsB FuIob"
+                  >
+                    50 turns
+                  </span>
+                </div>
+                <span
+                  className="sc-fzpjYC cvDMYw"
+                >
+                  HARD
+                </span>
+              </div>
+            </div>
+            <div
+              className="sc-fzoLag iOFjgv game-mode-item"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-fzoyAV kHTXvT"
+              >
+                <div
+                  className="sc-fzoXzr bPGMnc ship-container"
+                >
+                  <img
+                    className="sc-AxhUy dWjoNZ ship-image"
+                    src="submarine.png"
+                  />
+                  <span
+                    className="sc-fznxsB FuIob"
+                  >
+                    X turns
+                  </span>
+                </div>
+                <span
+                  className="sc-fzpjYC cvDMYw"
+                >
+                  CUSTOM
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-fzoyTs geBEAG"
+        />
+      </div>
+      <div
+        className="sc-fzqNJr hTjPdb"
+        onClick={[Function]}
+      >
+        READY
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots game-mode/Title Default 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-AxgMl iluWPs"
+  >
+    GAME MODE
+  </div>
+</div>
+`;
+
+exports[`Storyshots home/Button Default 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-AxirZ kgiUck"
+    onClick={[Function]}
+  >
+    PRUEBA
+  </div>
+</div>
+`;
+
+exports[`Storyshots home/HomeScreen Default 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-fznxKY gjrLSK"
+  >
+    <div
+      className="sc-fznMAR cOOhDK"
+    >
+      <div
+        className="sc-fzpmMD icWeRk title"
+      >
+        BATTLESHIP
+      </div>
+      <div
+        className="sc-AxirZ kgiUck"
+        onClick={[Function]}
+      >
+        NEW GAME
+      </div>
+      <div
+        className="sc-AxirZ kgiUck"
+        onClick={[Function]}
+      >
+        LEADERBOARD
+      </div>
+      <div
+        className="sc-AxirZ kgiUck"
+        onClick={[Function]}
+      >
+        OPTIONS
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots home/Title Default 1`] = `
+<div
+  className="sc-AxjAm dQzhcE"
+>
+  <div
+    className="sc-fzpmMD icWeRk"
+  >
+    BATTLESHIP
   </div>
 </div>
 `;
