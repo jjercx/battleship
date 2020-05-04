@@ -75,7 +75,7 @@ export const GameScreen = ({
 
   const handlePlayAgain = () => history.replace(routes.GAME_MODE);
 
-  if (!status || !turns) {
+  if (!status) {
     return <Redirect to={routes.GAME_MODE} />;
   }
 
@@ -101,7 +101,7 @@ export const GameScreen = ({
         <Grid size={size} />
       </Row>
       <Modal
-        title={status === gameStatus.WON ? "you won!" : "game over"}
+        title={status === gameStatus.WIN ? "you won!" : "game over"}
         isVisible={status !== gameStatus.IN_PROGRESS}
       >
         <Column>

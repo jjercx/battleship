@@ -25,6 +25,8 @@ export const getSize = ({ game: { size } }) => size;
 
 export const getGameStatus = ({ game: { status } }) => status;
 
+export const getGameMode = ({ game: { gameMode } }) => gameMode;
+
 export const getCell = ({ game: { board } }, row, col) =>
   board && board[row][col];
 
@@ -35,8 +37,7 @@ export const initialState = {
   hits: 0,
   shots: 0,
   turns: 0,
-  size: 2,
-  // size: 10,
+  size: 10,
   status: null,
   gameMode: null,
 };
@@ -50,7 +51,7 @@ export default (state = initialState, { type, payload }) => {
     case GAME_SETUP: {
       const gameMode = payload;
       const { turns } = gameMode;
-      return { ...state, loading: true, gameMode, turns };
+      return { ...state, loading: true, gameMode, turns, shots: 0, hits: 0 };
     }
     case GAME_READY: {
       const { ships, board } = payload;
@@ -81,7 +82,7 @@ export default (state = initialState, { type, payload }) => {
     }
     case GAME_END: {
       const { win } = payload;
-      const status = win ? gameStatus.WON : gameStatus.LOST;
+      const status = win ? gameStatus.WIN : gameStatus.LOSE;
       return { ...state, status };
     }
     default:

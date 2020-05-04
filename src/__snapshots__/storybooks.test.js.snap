@@ -44,109 +44,6 @@ exports[`Storyshots app/Ship Image Submarine 1`] = `
 </div>
 `;
 
-exports[`Storyshots game/GameScreen Default 1`] = `
-<div
-  className="sc-AxjAm dQzhcE"
->
-  <div
-    className="sc-fzqNJr gjMQXT"
-  >
-    <div
-      className="sc-fzoXzr fQqoaX"
-    >
-      <div
-        className="sc-fzpjYC dsySeg"
-      >
-        <div
-          className="sc-fzoyAV uphNT"
-        >
-          <div
-            className="sc-fzpans DoiQQ"
-          >
-            <span
-              className="sc-fzplWN iyluzC"
-            />
-            <span
-              className="sc-fznyAO FULts"
-            >
-              Hits
-            </span>
-          </div>
-          <div
-            className="sc-fzpans DoiQQ"
-          >
-            <span
-              className="sc-fzplWN iyluzC"
-            />
-            <span
-              className="sc-fznyAO FULts"
-            >
-              Shots
-            </span>
-          </div>
-          <div
-            className="sc-fzpans DoiQQ"
-          >
-            <span
-              className="sc-fzplWN iyluzC"
-            />
-            <span
-              className="sc-fznyAO FULts"
-            >
-              Turns
-            </span>
-          </div>
-        </div>
-        <div
-          className="sc-fzoLag JhxoW"
-        />
-      </div>
-    </div>
-    <div
-      className="sc-fzokOt jgNOAJ"
-    >
-      <div
-        className="sc-fzqBZW fqefWv"
-      >
-        <div
-          className="sc-AxgMl iluWPs title"
-        >
-          GAME OVER
-        </div>
-        <div
-          className="sc-fzpjYC dsySeg"
-        >
-          <div
-            className="sc-AxirZ kgiUck"
-            onClick={[Function]}
-          >
-            PLAY AGAIN
-          </div>
-          <div
-            className="sc-AxirZ kgiUck"
-            onClick={[Function]}
-          >
-            CHANGE MODE
-          </div>
-          <div
-            className="sc-AxirZ kgiUck"
-            onClick={[Function]}
-          >
-            LEADERBOARD
-          </div>
-          <div
-            className="sc-AxirZ kgiUck"
-            onClick={[Function]}
-          >
-            EXIT
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots game/Grid Default 1`] = `
 <div
   className="sc-AxjAm dQzhcE"
@@ -784,23 +681,23 @@ exports[`Storyshots game/Ship Item Aircraft 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fznKkj cFBCnT"
+    className="sc-fzpans gAlxAH"
   >
     <img
       className="sc-AxhUy dWjoNZ ship-image"
       src="aircraft.png"
     />
     <div
-      className="sc-fznZeY beoFBl"
+      className="sc-fzplWN hTYAPM"
     />
     <div
-      className="sc-fznZeY beoFBl"
+      className="sc-fzplWN hTYAPM"
     />
     <div
-      className="sc-fznZeY beoFBl"
+      className="sc-fzplWN hTYAPM"
     />
     <div
-      className="sc-fznZeY beoFBl"
+      className="sc-fzplWN hTYAPM"
     />
   </div>
 </div>
@@ -811,20 +708,20 @@ exports[`Storyshots game/Ship Item Battleship 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fznKkj cFBCnT"
+    className="sc-fzpans gAlxAH"
   >
     <img
       className="sc-AxhUy dWjoNZ ship-image"
       src="battleship.png"
     />
     <div
-      className="sc-fznZeY beoFBl"
+      className="sc-fzplWN hTYAPM"
     />
     <div
-      className="sc-fznZeY beoFBl"
+      className="sc-fzplWN hTYAPM"
     />
     <div
-      className="sc-fznZeY beoFBl"
+      className="sc-fzplWN hTYAPM"
     />
   </div>
 </div>
@@ -835,14 +732,14 @@ exports[`Storyshots game/Ship Item Carriership 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fznKkj cFBCnT"
+    className="sc-fzpans gAlxAH"
   >
     <img
       className="sc-AxhUy dWjoNZ ship-image"
       src="carriership.png"
     />
     <div
-      className="sc-fznZeY beoFBl"
+      className="sc-fzplWN hTYAPM"
     />
   </div>
 </div>
@@ -853,17 +750,17 @@ exports[`Storyshots game/Ship Item Submarine 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fznKkj cFBCnT"
+    className="sc-fzpans gAlxAH"
   >
     <img
       className="sc-AxhUy dWjoNZ ship-image"
       src="submarine.png"
     />
     <div
-      className="sc-fznZeY beoFBl"
+      className="sc-fzplWN hTYAPM"
     />
     <div
-      className="sc-fznZeY beoFBl"
+      className="sc-fzplWN hTYAPM"
     />
   </div>
 </div>
@@ -874,18 +771,18 @@ exports[`Storyshots game/Stat Default 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fznxsB hgwTrS"
+    className="sc-fzokOt dHGdsW"
   >
     <div
-      className="sc-fzpans DoiQQ"
+      className="sc-fznyAO cAvHKN"
     >
       <span
-        className="sc-fzplWN iyluzC"
+        className="sc-fznKkj gGvfJL"
       >
         10
       </span>
       <span
-        className="sc-fznyAO FULts"
+        className="sc-fznZeY husFzl"
       >
         Title
       </span>
@@ -899,7 +796,7 @@ exports[`Storyshots game/Tile Default 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fznJRM ioNmAn"
+    className="sc-fzqBZW hwQDSW"
   >
     <div
       className="sc-AxheI cLBCkG"
@@ -915,7 +812,7 @@ exports[`Storyshots game-mode/Button Default 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fznWqX hSCJuZ"
+    className="sc-fzqNJr gOcRba"
     onClick={[Function]}
   >
     READY
@@ -928,27 +825,27 @@ exports[`Storyshots game-mode/Game Mode Item Custom 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fzqARJ ggoIgy game-mode-item"
+    className="sc-fzoLag iOFjgv game-mode-item"
     onClick={[Function]}
   >
     <div
-      className="sc-fzoiQi cpbncM"
+      className="sc-fzoyAV kHTXvT"
     >
       <div
-        className="sc-fzqNqU cirPno ship-container"
+        className="sc-fzoXzr bPGMnc ship-container"
       >
         <img
           className="sc-AxhUy dWjoNZ ship-image"
           src="submarine.png"
         />
         <span
-          className="sc-fzoNJl hSVbAb"
+          className="sc-fznxsB FuIob"
         >
           X turns
         </span>
       </div>
       <span
-        className="sc-fzoyTs RIQxJ"
+        className="sc-fzpjYC cvDMYw"
       >
         CUSTOM
       </span>
@@ -962,27 +859,27 @@ exports[`Storyshots game-mode/Game Mode Item Easy 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fzqARJ ggoIgy game-mode-item"
+    className="sc-fzoLag iOFjgv game-mode-item"
     onClick={[Function]}
   >
     <div
-      className="sc-fzoiQi cpbncM"
+      className="sc-fzoyAV kHTXvT"
     >
       <div
-        className="sc-fzqNqU cirPno ship-container"
+        className="sc-fzoXzr bPGMnc ship-container"
       >
         <img
           className="sc-AxhUy dWjoNZ ship-image"
           src="carriership.png"
         />
         <span
-          className="sc-fzoNJl hSVbAb"
+          className="sc-fznxsB FuIob"
         >
           Infinite turns
         </span>
       </div>
       <span
-        className="sc-fzoyTs RIQxJ"
+        className="sc-fzpjYC cvDMYw"
       >
         EASY
       </span>
@@ -996,27 +893,27 @@ exports[`Storyshots game-mode/Game Mode Item Easy Selected 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fzqARJ ggoIgy game-mode-item"
+    className="sc-fzoLag iOFjgv game-mode-item"
     onClick={[Function]}
   >
     <div
-      className="sc-fzoiQi cpbncM"
+      className="sc-fzoyAV kHTXvT"
     >
       <div
-        className="sc-fzqNqU cirPno ship-container"
+        className="sc-fzoXzr bPGMnc ship-container"
       >
         <img
           className="sc-AxhUy dWjoNZ ship-image"
           src="carriership.png"
         />
         <span
-          className="sc-fzoNJl hSVbAb"
+          className="sc-fznxsB FuIob"
         >
           Infinite turns
         </span>
       </div>
       <span
-        className="sc-fzoyTs RIQxJ"
+        className="sc-fzpjYC cvDMYw"
       >
         EASY
       </span>
@@ -1030,27 +927,27 @@ exports[`Storyshots game-mode/Game Mode Item Hard 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fzqARJ ggoIgy game-mode-item"
+    className="sc-fzoLag iOFjgv game-mode-item"
     onClick={[Function]}
   >
     <div
-      className="sc-fzoiQi cpbncM"
+      className="sc-fzoyAV kHTXvT"
     >
       <div
-        className="sc-fzqNqU cirPno ship-container"
+        className="sc-fzoXzr bPGMnc ship-container"
       >
         <img
           className="sc-AxhUy dWjoNZ ship-image"
           src="aircraft.png"
         />
         <span
-          className="sc-fzoNJl hSVbAb"
+          className="sc-fznxsB FuIob"
         >
           50 turns
         </span>
       </div>
       <span
-        className="sc-fzoyTs RIQxJ"
+        className="sc-fzpjYC cvDMYw"
       >
         HARD
       </span>
@@ -1064,27 +961,27 @@ exports[`Storyshots game-mode/Game Mode Item Medium 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fzqARJ ggoIgy game-mode-item"
+    className="sc-fzoLag iOFjgv game-mode-item"
     onClick={[Function]}
   >
     <div
-      className="sc-fzoiQi cpbncM"
+      className="sc-fzoyAV kHTXvT"
     >
       <div
-        className="sc-fzqNqU cirPno ship-container"
+        className="sc-fzoXzr bPGMnc ship-container"
       >
         <img
           className="sc-AxhUy dWjoNZ ship-image"
           src="battleship.png"
         />
         <span
-          className="sc-fzoNJl hSVbAb"
+          className="sc-fznxsB FuIob"
         >
           100 turns
         </span>
       </div>
       <span
-        className="sc-fzoyTs RIQxJ"
+        className="sc-fzpjYC cvDMYw"
       >
         MEDIUM
       </span>
@@ -1098,16 +995,16 @@ exports[`Storyshots game-mode/GameModeScreen Default 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fzpmMD EFVBQ"
+    className="sc-fznWqX ipYzXo"
   >
     <div
-      className="sc-fzoXWK EPFe"
+      className="sc-fznJRM hAwyuG"
       onClick={[Function]}
     >
       X
     </div>
     <div
-      className="sc-fznxKY icNVvD"
+      className="sc-fzoiQi BfIJp"
     >
       <div
         className="sc-AxgMl iluWPs title"
@@ -1115,63 +1012,63 @@ exports[`Storyshots game-mode/GameModeScreen Default 1`] = `
         GAME MODE
       </div>
       <div
-        className="sc-fznMAR fLOlXc"
+        className="sc-fzqARJ gldWXk"
       >
         <div
-          className="sc-fznWOq hGBxnn"
+          className="sc-fzqNqU imHpqT"
         >
           <div
-            className="sc-fznWOq hGBxnn"
+            className="sc-fzqNqU imHpqT"
           >
             <div
-              className="sc-fzqARJ ggoIgy game-mode-item"
+              className="sc-fzoLag iOFjgv game-mode-item"
               onClick={[Function]}
             >
               <div
-                className="sc-fzoiQi cpbncM"
+                className="sc-fzoyAV kHTXvT"
               >
                 <div
-                  className="sc-fzqNqU cirPno ship-container"
+                  className="sc-fzoXzr bPGMnc ship-container"
                 >
                   <img
                     className="sc-AxhUy dWjoNZ ship-image"
                     src="carriership.png"
                   />
                   <span
-                    className="sc-fzoNJl hSVbAb"
+                    className="sc-fznxsB FuIob"
                   >
                     Infinite turns
                   </span>
                 </div>
                 <span
-                  className="sc-fzoyTs RIQxJ"
+                  className="sc-fzpjYC cvDMYw"
                 >
                   EASY
                 </span>
               </div>
             </div>
             <div
-              className="sc-fzqARJ ggoIgy game-mode-item"
+              className="sc-fzoLag iOFjgv game-mode-item"
               onClick={[Function]}
             >
               <div
-                className="sc-fzoiQi cpbncM"
+                className="sc-fzoyAV kHTXvT"
               >
                 <div
-                  className="sc-fzqNqU cirPno ship-container"
+                  className="sc-fzoXzr bPGMnc ship-container"
                 >
                   <img
                     className="sc-AxhUy dWjoNZ ship-image"
                     src="battleship.png"
                   />
                   <span
-                    className="sc-fzoNJl hSVbAb"
+                    className="sc-fznxsB FuIob"
                   >
                     100 turns
                   </span>
                 </div>
                 <span
-                  className="sc-fzoyTs RIQxJ"
+                  className="sc-fzpjYC cvDMYw"
                 >
                   MEDIUM
                 </span>
@@ -1179,57 +1076,57 @@ exports[`Storyshots game-mode/GameModeScreen Default 1`] = `
             </div>
           </div>
           <div
-            className="sc-fznWOq hGBxnn"
+            className="sc-fzqNqU imHpqT"
           >
             <div
-              className="sc-fzqARJ ggoIgy game-mode-item"
+              className="sc-fzoLag iOFjgv game-mode-item"
               onClick={[Function]}
             >
               <div
-                className="sc-fzoiQi cpbncM"
+                className="sc-fzoyAV kHTXvT"
               >
                 <div
-                  className="sc-fzqNqU cirPno ship-container"
+                  className="sc-fzoXzr bPGMnc ship-container"
                 >
                   <img
                     className="sc-AxhUy dWjoNZ ship-image"
                     src="aircraft.png"
                   />
                   <span
-                    className="sc-fzoNJl hSVbAb"
+                    className="sc-fznxsB FuIob"
                   >
                     50 turns
                   </span>
                 </div>
                 <span
-                  className="sc-fzoyTs RIQxJ"
+                  className="sc-fzpjYC cvDMYw"
                 >
                   HARD
                 </span>
               </div>
             </div>
             <div
-              className="sc-fzqARJ ggoIgy game-mode-item"
+              className="sc-fzoLag iOFjgv game-mode-item"
               onClick={[Function]}
             >
               <div
-                className="sc-fzoiQi cpbncM"
+                className="sc-fzoyAV kHTXvT"
               >
                 <div
-                  className="sc-fzqNqU cirPno ship-container"
+                  className="sc-fzoXzr bPGMnc ship-container"
                 >
                   <img
                     className="sc-AxhUy dWjoNZ ship-image"
                     src="submarine.png"
                   />
                   <span
-                    className="sc-fzoNJl hSVbAb"
+                    className="sc-fznxsB FuIob"
                   >
                     X turns
                   </span>
                 </div>
                 <span
-                  className="sc-fzoyTs RIQxJ"
+                  className="sc-fzpjYC cvDMYw"
                 >
                   CUSTOM
                 </span>
@@ -1238,11 +1135,11 @@ exports[`Storyshots game-mode/GameModeScreen Default 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzolEj cJRskT"
+          className="sc-fzoyTs geBEAG"
         />
       </div>
       <div
-        className="sc-fznWqX duFGYY"
+        className="sc-fzqNJr hTjPdb"
         onClick={[Function]}
       >
         READY
@@ -1282,13 +1179,13 @@ exports[`Storyshots home/HomeScreen Default 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fzoKki bZyqLI"
+    className="sc-fznxKY gjrLSK"
   >
     <div
-      className="sc-fzoYkl gnJqaz"
+      className="sc-fznMAR cOOhDK"
     >
       <div
-        className="sc-fzoxKX fWaYDY title"
+        className="sc-fzpmMD icWeRk title"
       >
         BATTLESHIP
       </div>
@@ -1320,7 +1217,7 @@ exports[`Storyshots home/Title Default 1`] = `
   className="sc-AxjAm dQzhcE"
 >
   <div
-    className="sc-fzoxKX fWaYDY"
+    className="sc-fzpmMD icWeRk"
   >
     BATTLESHIP
   </div>

@@ -4,6 +4,7 @@ import {
   TILE_TOUCH,
   GAME_UPDATE,
   GAME_END,
+  STORE_GAME_RECORD,
 } from "app/constants/action-types";
 
 export const gameSetup = ({ gameMode }) => ({
@@ -35,4 +36,9 @@ export const gameUpdate = ({ ship, shots, hits, turns }) => ({
 export const gameEnd = ({ win }) => ({
   type: GAME_END,
   payload: { win },
+});
+
+export const storeGameRecord = ({ gameRecord }) => ({
+  type: STORE_GAME_RECORD,
+  payload: { gameRecord },
 });

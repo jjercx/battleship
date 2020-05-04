@@ -6,6 +6,8 @@ import { withRouter } from "react-router-dom";
 import * as routes from "app/constants/routes";
 import { compose } from "redux";
 import { connect } from "react-redux";
+import { getGames } from "../../redux/games.reducer";
+import GameRecorsTable from "../game-record-table";
 
 const Container = styled.div`
   height: 100vh;
@@ -36,6 +38,7 @@ const Column = styled.div`
 `;
 
 export const LeaderboardScreen = ({ history, gameRecords }) => {
+  console.log("gameRecords: ", gameRecords);
   const handleClose = () => history.replace(routes.HOME);
   return (
     <Container>
@@ -43,12 +46,15 @@ export const LeaderboardScreen = ({ history, gameRecords }) => {
       <Content>
         <Title text="leaderboard" className="title"></Title>
         <Column>
-          {(gameRecords && gameRecords.length > 0) ??
-            "There aren't any game records. Go play something."}
+          <GameRecorsTable gameRecords={gameRecords} />
         </Column>
       </Content>
     </Container>
   );
 };
 
-export default compose(withRouter, connect(undefined))(LeaderboardScreen);
+const mapStateToProps = state => ({
+  gameRecords: getGames(state),
+});
+
+export default compose(withRouter, connect(mapStateToProps))(LeaderboardScreen);

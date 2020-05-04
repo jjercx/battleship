@@ -3,9 +3,15 @@ import {
   GAME_SETUP,
   TILE_TOUCH,
   GAME_UPDATE,
+  GAME_END,
 } from "app/constants/action-types";
 import Game from "game/models/game";
-import { gameReady, gameUpdate, gameEnd } from "game/redux/game.actions";
+import {
+  gameReady,
+  gameUpdate,
+  gameEnd,
+  storeGameRecord,
+} from "game/redux/game.actions";
 import {
   getCell,
   getShip,
@@ -14,7 +20,10 @@ import {
   getTurns,
   getSize,
   getShips,
+  getGameMode,
 } from "./game.reducer";
+import GameRecord from "leaderboard/models/game-record";
+import * as gameStatus from "game/constants/game-status";
 
 export function* onGameSetup() {
   const boardSize = yield select(getSize);
@@ -60,8 +69,17 @@ export function* watchForGameEnd() {
   }
 }
 
+export function* onGameEnd({ payload: { win } }) {
+  const shots = yield select(getShots);
+  const { turns, name: mode } = yield select(getGameMode);
+  const result = win ? gameStatus.WIN : gameStatus.LOSE;
+  const gameRecord = new GameRecord({ shots, turns, mode, result });
+  yield put(storeGameRecord({ gameRecord }));
+}
+
 export default [
   takeLatest(GAME_SETUP, onGameSetup),
   takeEvery(TILE_TOUCH, onTileTouch),
   takeEvery(GAME_UPDATE, watchForGameEnd),
+  takeEvery(GAME_END, onGameEnd),
 ];
