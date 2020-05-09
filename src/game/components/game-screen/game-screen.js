@@ -4,13 +4,12 @@ import Game from "game/components/game";
 import Modal from "app/components/modal";
 import Button from "app/components/button";
 import { connect } from "react-redux";
-import { getGameResult } from "game/redux/game.reducer";
 import * as actions from "game/redux/game.actions";
 import { compose } from "redux";
 import { withRouter, Redirect } from "react-router-dom";
 import * as routes from "app/constants/routes";
 import * as gameResult from "game/constants/game-result";
-import { getGameReady } from "app/redux/game-info.reducer";
+import { getGameReady, getGameResult } from "app/redux/game-info.reducer";
 
 const Container = styled.div`
   position: relative;

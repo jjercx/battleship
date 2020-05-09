@@ -2,11 +2,9 @@ import {
   GAME_SETUP,
   GAME_READY,
   GAME_UPDATE,
-  GAME_END,
   SET_SIZE,
 } from "app/constants/action-types";
 import Ship from "game/models/ship";
-import * as gameResult from "../constants/game-result";
 
 export const getShips = ({ game: { ships } }) =>
   Object.values(ships).map(ship => new Ship(ship));
@@ -21,8 +19,6 @@ export const getTurns = ({ game: { turns } }) => turns;
 
 export const getSize = ({ game: { size } }) => size;
 
-export const getGameResult = ({ game: { result } }) => result;
-
 export const getCell = ({ game: { board } }, row, col) =>
   board && board[row][col];
 
@@ -33,7 +29,6 @@ export const initialState = {
   shots: 0,
   turns: 0,
   size: 10,
-  result: null,
 };
 
 export default (state = initialState, { type, payload }) => {
@@ -71,11 +66,6 @@ export default (state = initialState, { type, payload }) => {
         hits: newHits,
         turns,
       };
-    }
-    case GAME_END: {
-      const { win } = payload;
-      const result = win ? gameResult.WIN : gameResult.LOSE;
-      return { ...state, result };
     }
     default:
       return state;

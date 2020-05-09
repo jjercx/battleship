@@ -33,9 +33,9 @@ export const gameUpdate = ({ ship, shots, hits, turns }) => ({
   payload: { ship, shots, hits, turns },
 });
 
-export const gameEnd = ({ win }) => ({
+export const gameEnd = ({ result }) => ({
   type: GAME_END,
-  payload: { win },
+  payload: { result },
 });
 
 export const storeGameRecord = ({ gameRecord }) => ({

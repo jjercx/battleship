@@ -58,21 +58,20 @@ export function* watchForGameEnd() {
   const allDead = ships.every(ship => !ship.isAlive());
 
   if (allDead) {
-    yield put(gameEnd({ win: true }));
+    yield put(gameEnd({ result: gameResult.WIN }));
     return;
   }
 
   const turns = yield select(getTurns);
   if (turns === 0) {
-    yield put(gameEnd({ win: false }));
+    yield put(gameEnd({ result: gameResult.LOSE }));
     return;
   }
 }
 
-export function* onGameEnd({ payload: { win } }) {
+export function* onGameEnd({ payload: { result } }) {
   const shots = yield select(getShots);
   const { turns, name: mode } = yield select(getGameMode);
-  const result = win ? gameResult.WIN : gameResult.LOSE;
   const gameRecord = new GameRecord({ shots, turns, mode, result });
   yield put(storeGameRecord({ gameRecord }));
 }
