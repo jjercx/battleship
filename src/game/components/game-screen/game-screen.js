@@ -4,12 +4,12 @@ import Game from "game/components/game";
 import Modal from "app/components/modal";
 import Button from "app/components/button";
 import { connect } from "react-redux";
-import { getGameStatus } from "game/redux/game.reducer";
+import { getGameResult } from "game/redux/game.reducer";
 import * as actions from "game/redux/game.actions";
 import { compose } from "redux";
 import { withRouter, Redirect } from "react-router-dom";
 import * as routes from "app/constants/routes";
-import * as gameStatus from "game/constants/game-status";
+import * as gameResult from "game/constants/game-result";
 import { getGameReady } from "app/redux/game-info.reducer";
 
 const Container = styled.div`
@@ -31,7 +31,7 @@ const Column = styled.div`
   align-items: center;
 `;
 
-export const GameScreen = ({ history, status, isGameReady }) => {
+export const GameScreen = ({ history, result, isGameReady }) => {
   const handleExit = () => history.replace(routes.HOME);
 
   const handleLeaderboard = () => history.replace(routes.LEADERBOARD);
@@ -42,14 +42,12 @@ export const GameScreen = ({ history, status, isGameReady }) => {
     return <Redirect to={routes.GAME_MODE} />;
   }
 
-  // FIXME: show modal with result
-
   return (
     <Container>
       <Game />
       <Modal
-        title={status === gameStatus.WIN ? "you won!" : "game over"}
-        isVisible={false}
+        title={result === gameResult.WIN ? "you won!" : "game over"}
+        isVisible={!!result}
       >
         <Column>
           <Button text="play again" onClick={handlePlayAgain} />
@@ -62,7 +60,7 @@ export const GameScreen = ({ history, status, isGameReady }) => {
 };
 
 const mapStateToProps = state => ({
-  status: getGameStatus(state),
+  result: getGameResult(state),
   isGameReady: getGameReady(state),
 });
 

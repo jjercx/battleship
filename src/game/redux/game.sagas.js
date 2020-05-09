@@ -22,7 +22,7 @@ import {
   getShips,
 } from "./game.reducer";
 import GameRecord from "leaderboard/models/game-record";
-import * as gameStatus from "game/constants/game-status";
+import * as gameResult from "game/constants/game-result";
 import { getGameMode } from "app/redux/game-info.reducer";
 
 export function* onGameSetup() {
@@ -72,7 +72,7 @@ export function* watchForGameEnd() {
 export function* onGameEnd({ payload: { win } }) {
   const shots = yield select(getShots);
   const { turns, name: mode } = yield select(getGameMode);
-  const result = win ? gameStatus.WIN : gameStatus.LOSE;
+  const result = win ? gameResult.WIN : gameResult.LOSE;
   const gameRecord = new GameRecord({ shots, turns, mode, result });
   yield put(storeGameRecord({ gameRecord }));
 }

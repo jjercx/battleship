@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import styled, { css } from "styled-components";
-import * as gameStatus from "game/constants/game-status";
+import * as gameResult from "game/constants/game-result";
 
 const Container = styled.div`
   display: grid;
@@ -13,14 +13,14 @@ const Container = styled.div`
 const Text = styled.span`
   justify-self: center;
   ${props =>
-    props.result === gameStatus.WIN &&
+    props.result === gameResult.WIN &&
     css`
       color: ${props => props.theme.green};
       font-weight: 500;
     `}
 
   ${props =>
-    props.result === gameStatus.LOSE &&
+    props.result === gameResult.LOSE &&
     css`
       color: ${props => props.theme.red};
       font-weight: 500;

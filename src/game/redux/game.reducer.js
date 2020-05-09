@@ -6,7 +6,7 @@ import {
   SET_SIZE,
 } from "app/constants/action-types";
 import Ship from "game/models/ship";
-import * as gameStatus from "../constants/game-status";
+import * as gameResult from "../constants/game-result";
 
 export const getShips = ({ game: { ships } }) =>
   Object.values(ships).map(ship => new Ship(ship));
@@ -21,7 +21,7 @@ export const getTurns = ({ game: { turns } }) => turns;
 
 export const getSize = ({ game: { size } }) => size;
 
-export const getGameStatus = ({ game: { status } }) => status;
+export const getGameResult = ({ game: { result } }) => result;
 
 export const getCell = ({ game: { board } }, row, col) =>
   board && board[row][col];
@@ -33,7 +33,7 @@ export const initialState = {
   shots: 0,
   turns: 0,
   size: 10,
-  status: null,
+  result: null,
 };
 
 export default (state = initialState, { type, payload }) => {
@@ -74,8 +74,8 @@ export default (state = initialState, { type, payload }) => {
     }
     case GAME_END: {
       const { win } = payload;
-      const status = win ? gameStatus.WIN : gameStatus.LOSE;
-      return { ...state, status };
+      const result = win ? gameResult.WIN : gameResult.LOSE;
+      return { ...state, result };
     }
     default:
       return state;
