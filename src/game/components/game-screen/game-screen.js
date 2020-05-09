@@ -1,20 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Grid from "game/components/grid";
-import Stat from "game/components/stat";
-import ShipItem from "game/components/ship-item/ship-item";
+import Game from "game/components/game";
 import Modal from "app/components/modal";
 import Button from "app/components/button";
 import { connect } from "react-redux";
-import {
-  getShips,
-  getLoading,
-  getShots,
-  getTurns,
-  getHits,
-  getSize,
-  getGameStatus,
-} from "game/redux/game.reducer";
+import { getGameStatus } from "game/redux/game.reducer";
 import * as actions from "game/redux/game.actions";
 import { compose } from "redux";
 import { withRouter, Redirect } from "react-router-dom";
@@ -26,29 +16,11 @@ const Container = styled.div`
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: ${props => props.theme.black};
-`;
-
-const StatPanel = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 10px;
-`;
-
-const ShipPanel = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  margin: 10px;
-`;
-
-const Row = styled.div`
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
 `;
 
 const Column = styled.div`
@@ -58,17 +30,7 @@ const Column = styled.div`
   align-items: center;
 `;
 
-export const GameScreen = ({
-  loading,
-  ships = [],
-  size,
-  hits,
-  shots,
-  turns,
-  history,
-  status,
-  gameSetup,
-}) => {
+export const GameScreen = ({ history, status }) => {
   const handleExit = () => history.replace(routes.HOME);
 
   const handleLeaderboard = () => history.replace(routes.LEADERBOARD);
@@ -79,27 +41,9 @@ export const GameScreen = ({
     return <Redirect to={routes.GAME_MODE} />;
   }
 
-  if (loading) {
-    return null;
-  }
-
   return (
     <Container>
-      <Row>
-        <Column>
-          <StatPanel>
-            <Stat value={hits} title="Hits"></Stat>
-            <Stat value={shots} title="Shots"></Stat>
-            <Stat value={turns === Infinity ? "∞" : turns} title="Turns"></Stat>
-          </StatPanel>
-          <ShipPanel>
-            {ships.map(ship => (
-              <ShipItem ship={ship} key={ship.id}></ShipItem>
-            ))}
-          </ShipPanel>
-        </Column>
-        <Grid size={size} />
-      </Row>
+      <Game />
       <Modal
         title={status === gameStatus.WIN ? "you won!" : "game over"}
         isVisible={status !== gameStatus.IN_PROGRESS}
@@ -115,12 +59,6 @@ export const GameScreen = ({
 };
 
 const mapStateToProps = state => ({
-  loading: getLoading(state),
-  ships: getShips(state),
-  shots: getShots(state),
-  turns: getTurns(state),
-  hits: getHits(state),
-  size: getSize(state),
   status: getGameStatus(state),
 });
 

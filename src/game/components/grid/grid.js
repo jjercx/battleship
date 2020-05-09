@@ -5,7 +5,7 @@ import radar from "./assets/radargrid.png";
 import { A_CHAR_CODE } from "app/constants/game";
 
 const Grid = styled.div`
-  --square-size: 8vmin;
+  --square-size: 4vmin;
   margin: 10px;
   display: grid;
   grid-template-columns: calc(var(--square-size) / 2) repeat(
