@@ -9,10 +9,10 @@ import {
   getShots,
   getHits,
   getTurns,
-  getSize,
   getShips,
 } from "./game.reducer";
 import { cloneableGenerator } from "@redux-saga/testing-utils";
+import { getSize } from "app/redux/game-info.reducer";
 
 jest.mock("game/models/game");
 

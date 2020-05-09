@@ -2,7 +2,6 @@ import {
   GAME_SETUP,
   GAME_READY,
   GAME_UPDATE,
-  SET_SIZE,
 } from "app/constants/action-types";
 import Ship from "game/models/ship";
 
@@ -17,8 +16,6 @@ export const getShots = ({ game: { shots } }) => shots;
 
 export const getTurns = ({ game: { turns } }) => turns;
 
-export const getSize = ({ game: { size } }) => size;
-
 export const getCell = ({ game: { board } }, row, col) =>
   board && board[row][col];
 
@@ -28,15 +25,10 @@ export const initialState = {
   hits: 0,
   shots: 0,
   turns: 0,
-  size: 10,
 };
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {
-    case SET_SIZE: {
-      const { size } = payload;
-      return { ...state, size };
-    }
     case GAME_SETUP: {
       const gameMode = payload;
       const { turns } = gameMode;

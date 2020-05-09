@@ -18,12 +18,11 @@ import {
   getShots,
   getHits,
   getTurns,
-  getSize,
   getShips,
 } from "./game.reducer";
 import GameRecord from "leaderboard/models/game-record";
 import * as gameResult from "game/constants/game-result";
-import { getGameMode } from "app/redux/game-info.reducer";
+import { getGameMode, getSize } from "app/redux/game-info.reducer";
 
 export function* onGameSetup() {
   const boardSize = yield select(getSize);

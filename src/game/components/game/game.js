@@ -3,15 +3,10 @@ import styled from "styled-components";
 import Stat from "game/components/stat";
 import ShipItem from "game/components/ship-item/ship-item";
 import { connect } from "react-redux";
-import {
-  getShips,
-  getShots,
-  getTurns,
-  getSize,
-  getHits,
-} from "game/redux/game.reducer";
+import { getShips, getShots, getTurns, getHits } from "game/redux/game.reducer";
 import * as actions from "game/redux/game.actions";
 import Grid from "game/components/grid";
+import { getSize } from "app/redux/game-info.reducer";
 
 const StatPanel = styled.div`
   display: grid;

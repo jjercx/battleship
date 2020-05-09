@@ -6,8 +6,8 @@ import * as routes from "app/constants/routes";
 import * as actions from "options/redux/options.actions";
 import { compose } from "redux";
 import { connect } from "react-redux";
-import { getSize } from "game/redux/game.reducer";
 import Close from "app/components/close";
+import { getSize } from "app/redux/game-info.reducer";
 
 const Container = styled.div`
   height: 100vh;
