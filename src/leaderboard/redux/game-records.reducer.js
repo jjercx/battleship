@@ -2,9 +2,9 @@ import { STORE_GAME_RECORD } from "app/constants/action-types";
 import GameRecord from "leaderboard/models/game-record";
 import * as gameStatus from "game/constants/game-status";
 
-export const getGames = ({ games }) =>
-  Object.values(games)
-    .map(game => new GameRecord(game))
+export const getGameRecords = ({ gameRecords }) =>
+  Object.values(gameRecords)
+    .map(gameRecord => new GameRecord(gameRecord))
     .sort((a, b) => {
       if (a.result === gameStatus.WIN && b.result !== gameStatus.WIN) {
         return -1;

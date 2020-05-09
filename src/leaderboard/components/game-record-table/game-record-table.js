@@ -35,8 +35,6 @@ const Title = styled.span`
 `;
 
 export default ({ gameRecords }) => {
-  console.log("gameRecords2: ", gameRecords);
-
   if (!gameRecords || gameRecords.length === 0) {
     return "There aren't any game records. Go play something.";
   }
