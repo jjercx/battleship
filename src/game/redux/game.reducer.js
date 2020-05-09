@@ -13,8 +13,6 @@ export const getShips = ({ game: { ships } }) =>
 
 export const getShip = ({ game: { ships } }, shipId) => ships[shipId];
 
-export const getLoading = ({ game: { loading } }) => loading;
-
 export const getHits = ({ game: { hits } }) => hits;
 
 export const getShots = ({ game: { shots } }) => shots;
@@ -29,7 +27,6 @@ export const getCell = ({ game: { board } }, row, col) =>
   board && board[row][col];
 
 export const initialState = {
-  loading: false,
   board: null,
   ships: {},
   hits: 0,
@@ -48,16 +45,14 @@ export default (state = initialState, { type, payload }) => {
     case GAME_SETUP: {
       const gameMode = payload;
       const { turns } = gameMode;
-      return { ...state, loading: true, turns, shots: 0, hits: 0 };
+      return { ...state, turns, shots: 0, hits: 0 };
     }
     case GAME_READY: {
       const { ships, board } = payload;
       return {
         ...state,
-        loading: false,
         board,
         ships,
-        status: gameStatus.IN_PROGRESS,
       };
     }
     case GAME_UPDATE: {

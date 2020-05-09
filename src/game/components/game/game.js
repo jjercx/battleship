@@ -5,7 +5,6 @@ import ShipItem from "game/components/ship-item/ship-item";
 import { connect } from "react-redux";
 import {
   getShips,
-  getLoading,
   getShots,
   getTurns,
   getSize,
@@ -40,11 +39,7 @@ const Row = styled.div`
   justify-content: center;
 `;
 
-export const Game = ({ loading, ships = [], hits, shots, turns, size }) => {
-  if (loading) {
-    return null;
-  }
-
+export const Game = ({ ships = [], hits, shots, turns, size }) => {
   return (
     <Row>
       <Column>
@@ -65,7 +60,6 @@ export const Game = ({ loading, ships = [], hits, shots, turns, size }) => {
 };
 
 const mapStateToProps = state => ({
-  loading: getLoading(state),
   ships: getShips(state),
   shots: getShots(state),
   turns: getTurns(state),

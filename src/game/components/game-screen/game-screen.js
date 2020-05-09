@@ -10,6 +10,7 @@ import { compose } from "redux";
 import { withRouter, Redirect } from "react-router-dom";
 import * as routes from "app/constants/routes";
 import * as gameStatus from "game/constants/game-status";
+import { getGameReady } from "app/redux/game-info.reducer";
 
 const Container = styled.div`
   position: relative;
@@ -30,23 +31,25 @@ const Column = styled.div`
   align-items: center;
 `;
 
-export const GameScreen = ({ history, status }) => {
+export const GameScreen = ({ history, status, isGameReady }) => {
   const handleExit = () => history.replace(routes.HOME);
 
   const handleLeaderboard = () => history.replace(routes.LEADERBOARD);
 
   const handlePlayAgain = () => history.replace(routes.GAME_MODE);
 
-  if (!status) {
+  if (!isGameReady) {
     return <Redirect to={routes.GAME_MODE} />;
   }
+
+  // FIXME: show modal with result
 
   return (
     <Container>
       <Game />
       <Modal
         title={status === gameStatus.WIN ? "you won!" : "game over"}
-        isVisible={status !== gameStatus.IN_PROGRESS}
+        isVisible={false}
       >
         <Column>
           <Button text="play again" onClick={handlePlayAgain} />
@@ -60,6 +63,7 @@ export const GameScreen = ({ history, status }) => {
 
 const mapStateToProps = state => ({
   status: getGameStatus(state),
+  isGameReady: getGameReady(state),
 });
 
 export default compose(
