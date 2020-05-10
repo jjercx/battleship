@@ -3,6 +3,7 @@ import {
   GAME_READY,
   GAME_END,
   SET_SIZE,
+  SET_NUM_PLAYERS,
 } from "app/constants/action-types";
 
 export const getGameMode = ({ gameInfo: { gameMode } }) => gameMode;
@@ -23,6 +24,10 @@ export default (state = initialState, { type, payload }) => {
     case SET_SIZE: {
       const { size } = payload;
       return { ...state, size };
+    }
+    case SET_NUM_PLAYERS: {
+      const { numPlayers } = payload;
+      return { ...state, numPlayers };
     }
     case GAME_SETUP: {
       const { gameMode, numPlayers } = payload;
