@@ -30,12 +30,15 @@ export const initialState = {
 export default (state = initialState, { type, payload }) => {
   switch (type) {
     case GAME_SETUP: {
-      const gameMode = payload;
-      const { turns } = gameMode;
+      const {
+        gameMode: { turns },
+      } = payload;
       return { ...state, turns, shots: 0, hits: 0 };
     }
     case GAME_READY: {
-      const { ships, board } = payload;
+      const { games } = payload;
+      const { ships, board } = games[0];
+      // TODO: this should work with 2 players too
       return {
         ...state,
         board,

@@ -94,7 +94,7 @@ export const GameModeScreen = ({ history, gameSetup }) => {
   };
 
   const handleReady = () => {
-    gameSetup({ gameMode: selectedGameMode.setTurns(turns) });
+    gameSetup({ gameMode: selectedGameMode.setTurns(turns), numPlayers: 1 });
     history.push(routes.GAME);
   };
 

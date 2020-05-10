@@ -7,16 +7,15 @@ import {
   STORE_GAME_RECORD,
 } from "app/constants/action-types";
 
-export const gameSetup = ({ gameMode }) => ({
+export const gameSetup = ({ gameMode, numPlayers }) => ({
   type: GAME_SETUP,
-  payload: gameMode,
+  payload: { gameMode, numPlayers },
 });
 
-export const gameReady = ({ ships, board }) => ({
+export const gameReady = ({ games }) => ({
   type: GAME_READY,
   payload: {
-    ships,
-    board,
+    games,
   },
 });
 

@@ -24,10 +24,10 @@ import GameRecord from "leaderboard/models/game-record";
 import * as gameResult from "game/constants/game-result";
 import { getGameMode, getSize } from "app/redux/game-info.reducer";
 
-export function* onGameSetup() {
+export function* onGameSetup({ payload: { numPlayers } }) {
   const boardSize = yield select(getSize);
-  const { ships, board } = Game.setup(boardSize);
-  yield put(gameReady({ ships, board }));
+  const games = Game.setup(boardSize, numPlayers);
+  yield put(gameReady({ games }));
 }
 
 export function* onTileTouch({ payload: { row, col } }) {

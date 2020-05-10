@@ -25,8 +25,8 @@ export default (state = initialState, { type, payload }) => {
       return { ...state, size };
     }
     case GAME_SETUP: {
-      const gameMode = payload;
-      return { ...state, gameMode, ready: false, result: null };
+      const { gameMode, numPlayers } = payload;
+      return { ...state, gameMode, numPlayers, ready: false, result: null };
     }
     case GAME_READY: {
       return { ...state, ready: true };
