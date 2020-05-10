@@ -31,8 +31,9 @@ import {
 export function* onGameSetup() {
   const boardSize = yield select(getSize);
   const numPlayers = yield select(getNumPlayers);
-  console.log("numPlayers: ", numPlayers);
+
   const games = Game.setup(boardSize, numPlayers);
+
   yield put(gameReady({ games }));
 }
 
@@ -61,7 +62,7 @@ export function* onTileTouch({ payload: { row, col, player } }) {
 export function* watchForGameEnd() {
   const numPlayers = yield select(getNumPlayers);
 
-  for (let player = 1; player === numPlayers; player++) {
+  for (let player = 1; player <= numPlayers; player++) {
     const ships = yield select(getShips, player);
     const allDead = ships.every(ship => !ship.isAlive());
 

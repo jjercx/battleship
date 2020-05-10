@@ -30,6 +30,13 @@ const Column = styled.div`
   align-items: center;
 `;
 
+const title = {
+  [gameResult.WIN]: "you won!",
+  [gameResult.LOSE]: "you lose!",
+  [gameResult.WIN_P1]: "P1 won!",
+  [gameResult.WIN_P2]: "P2 won!",
+};
+
 export const GameScreen = ({ history, result, numPlayers }) => {
   const handleExit = () => history.replace(routes.HOME);
 
@@ -40,12 +47,9 @@ export const GameScreen = ({ history, result, numPlayers }) => {
   return (
     <Container>
       {[...Array(numPlayers)].map((_, i) => (
-        <Game player={i + 1} />
+        <Game player={i + 1} key={i} />
       ))}
-      <Modal
-        title={result === gameResult.WIN ? "you won!" : "game over"}
-        isVisible={!!result}
-      >
+      <Modal title={title[result]} isVisible={!!result}>
         <Column>
           <Button text="play again" onClick={handlePlayAgain} />
           <Button text="leaderboard" onClick={handleLeaderboard} />
