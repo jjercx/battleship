@@ -34,7 +34,7 @@ const Row = styled.div`
   justify-content: center;
 `;
 
-export const Game = ({ ships = [], hits, shots, turns, size }) => {
+export const Game = ({ ships = [], hits, shots, turns, size, player }) => {
   return (
     <Row>
       <Column>
@@ -49,17 +49,17 @@ export const Game = ({ ships = [], hits, shots, turns, size }) => {
           ))}
         </ShipPanel>
       </Column>
-      <Grid size={size} />
+      <Grid size={size} player={player} />
     </Row>
   );
 };
 
-const mapStateToProps = state => ({
-  ships: getShips(state),
-  shots: getShots(state),
-  turns: getTurns(state),
+const mapStateToProps = (state, { player }) => ({
+  ships: getShips(state, player),
+  shots: getShots(state, player),
+  turns: getTurns(state, player),
+  hits: getHits(state, player),
   size: getSize(state),
-  hits: getHits(state),
 });
 
 export default connect(mapStateToProps, actions)(Game);

@@ -7,9 +7,9 @@ import {
   STORE_GAME_RECORD,
 } from "app/constants/action-types";
 
-export const gameSetup = ({ gameMode, numPlayers }) => ({
+export const gameSetup = ({ gameMode }) => ({
   type: GAME_SETUP,
-  payload: { gameMode, numPlayers },
+  payload: { gameMode },
 });
 
 export const gameReady = ({ games }) => ({
@@ -19,17 +19,18 @@ export const gameReady = ({ games }) => ({
   },
 });
 
-export const tileTouch = ({ row, col }) => ({
+export const tileTouch = ({ row, col, player }) => ({
   type: TILE_TOUCH,
   payload: {
     row,
     col,
+    player,
   },
 });
 
-export const gameUpdate = ({ ship, shots, hits, turns }) => ({
+export const gameUpdate = ({ ship, shots, hits, turns, player }) => ({
   type: GAME_UPDATE,
-  payload: { ship, shots, hits, turns },
+  payload: { ship, shots, hits, turns, player },
 });
 
 export const gameEnd = ({ result }) => ({

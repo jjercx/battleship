@@ -10,6 +10,7 @@ export const getGameMode = ({ gameInfo: { gameMode } }) => gameMode;
 export const getGameReady = ({ gameInfo: { ready } }) => ready;
 export const getGameResult = ({ gameInfo: { result } }) => result;
 export const getSize = ({ gameInfo: { size } }) => size;
+export const getNumPlayers = ({ gameInfo: { numPlayers } }) => numPlayers;
 
 const initialState = {
   gameMode: null,
@@ -30,8 +31,8 @@ export default (state = initialState, { type, payload }) => {
       return { ...state, numPlayers };
     }
     case GAME_SETUP: {
-      const { gameMode, numPlayers } = payload;
-      return { ...state, gameMode, numPlayers, ready: false, result: null };
+      const { gameMode } = payload;
+      return { ...state, gameMode, ready: false, result: null };
     }
     case GAME_READY: {
       return { ...state, ready: true };

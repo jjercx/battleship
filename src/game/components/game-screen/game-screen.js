@@ -43,7 +43,7 @@ export const GameScreen = ({ history, result, isGameReady }) => {
 
   return (
     <Container>
-      <Game />
+      <Game player={1} />
       <Modal
         title={result === gameResult.WIN ? "you won!" : "game over"}
         isVisible={!!result}

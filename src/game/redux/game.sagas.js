@@ -22,21 +22,27 @@ import {
 } from "./game.reducer";
 import GameRecord from "leaderboard/models/game-record";
 import * as gameResult from "game/constants/game-result";
-import { getGameMode, getSize } from "app/redux/game-info.reducer";
+import {
+  getGameMode,
+  getSize,
+  getNumPlayers,
+} from "app/redux/game-info.reducer";
 
-export function* onGameSetup({ payload: { numPlayers } }) {
+export function* onGameSetup() {
   const boardSize = yield select(getSize);
+  const numPlayers = yield select(getNumPlayers);
+  console.log("numPlayers: ", numPlayers);
   const games = Game.setup(boardSize, numPlayers);
   yield put(gameReady({ games }));
 }
 
-export function* onTileTouch({ payload: { row, col } }) {
-  const shipId = yield select(getCell, row, col);
-  const ship = yield select(getShip, shipId);
+export function* onTileTouch({ payload: { row, col, player } }) {
+  const shipId = yield select(getCell, row, col, player);
+  const ship = yield select(getShip, shipId, player);
 
-  let shots = yield select(getShots, shipId);
-  let hits = yield select(getHits, shipId);
-  let turns = yield select(getTurns, shipId);
+  let shots = yield select(getShots, player);
+  let hits = yield select(getHits, player);
+  let turns = yield select(getTurns, player);
 
   shots += 1;
   turns -= 1;
@@ -45,31 +51,56 @@ export function* onTileTouch({ payload: { row, col } }) {
     ship.hit();
     hits += 1;
 
-    yield put(gameUpdate({ ship, shots, hits, turns }));
+    yield put(gameUpdate({ ship, shots, hits, turns, player }));
     return;
   }
 
-  yield put(gameUpdate({ shots, turns }));
+  yield put(gameUpdate({ shots, turns, player }));
 }
 
 export function* watchForGameEnd() {
-  const ships = yield select(getShips);
-  const allDead = ships.every(ship => !ship.isAlive());
+  const numPlayers = yield select(getNumPlayers);
 
-  if (allDead) {
-    yield put(gameEnd({ result: gameResult.WIN }));
-    return;
-  }
+  for (let player = 1; player === numPlayers; player++) {
+    const ships = yield select(getShips, player);
+    const allDead = ships.every(ship => !ship.isAlive());
 
-  const turns = yield select(getTurns);
-  if (turns === 0) {
-    yield put(gameEnd({ result: gameResult.LOSE }));
-    return;
+    if (allDead) {
+      if (numPlayers === 1) {
+        yield put(gameEnd({ result: gameResult.WIN }));
+        return;
+      }
+
+      yield put(gameEnd({ result: gameResult[`WIN_P${player}`] }));
+      return;
+    }
+
+    const turns = yield select(getTurns, player);
+    if (turns === 0) {
+      if (numPlayers === 1) {
+        yield put(gameEnd({ result: gameResult.LOSE }));
+        return;
+      }
+
+      if (player === 1) {
+        yield put(gameEnd({ result: gameResult.WIN_P2 }));
+        return;
+      }
+
+      yield put(gameEnd({ result: gameResult.WIN_P1 }));
+      return;
+    }
   }
 }
 
 export function* onGameEnd({ payload: { result } }) {
-  const shots = yield select(getShots);
+  const numPlayers = yield select(getNumPlayers);
+
+  if (numPlayers > 1) {
+    return;
+  }
+
+  const shots = yield select(getShots, 1);
   const { turns, name: mode } = yield select(getGameMode);
   const gameRecord = new GameRecord({ shots, turns, mode, result });
   yield put(storeGameRecord({ gameRecord }));

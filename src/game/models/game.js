@@ -5,14 +5,17 @@ import { EMPTY, DIRECTIONS } from "app/constants/game";
 
 export default class Game {
   static setup(boardSize, numPlayers) {
-    const games = [];
+    const games = [
+      { ships: {}, board: null },
+      { ships: {}, board: null },
+    ];
     for (let i = 0; i < numPlayers; i++) {
       const ships = Game.createShipsFromData(shipData.data);
       const board = Game.createEmptyBoard(boardSize);
 
       Game.fillBoardWithShips(board, ships);
 
-      games.push({ ships, board });
+      games[i] = { board, ships };
     }
     return games;
   }
