@@ -6,10 +6,10 @@ import Button from "app/components/button";
 import { connect } from "react-redux";
 import * as actions from "game/redux/game.actions";
 import { compose } from "redux";
-import { withRouter, Redirect } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import * as routes from "app/constants/routes";
 import * as gameResult from "game/constants/game-result";
-import { getGameReady, getGameResult } from "app/redux/game-info.reducer";
+import { getGameResult, getNumPlayers } from "app/redux/game-info.reducer";
 
 const Container = styled.div`
   position: relative;
@@ -30,20 +30,18 @@ const Column = styled.div`
   align-items: center;
 `;
 
-export const GameScreen = ({ history, result, isGameReady }) => {
+export const GameScreen = ({ history, result, numPlayers }) => {
   const handleExit = () => history.replace(routes.HOME);
 
   const handleLeaderboard = () => history.replace(routes.LEADERBOARD);
 
   const handlePlayAgain = () => history.replace(routes.GAME_MODE);
 
-  if (!isGameReady) {
-    return <Redirect to={routes.GAME_MODE} />;
-  }
-
   return (
     <Container>
-      <Game player={1} />
+      {[...Array(numPlayers)].map((_, i) => (
+        <Game player={i + 1} />
+      ))}
       <Modal
         title={result === gameResult.WIN ? "you won!" : "game over"}
         isVisible={!!result}
@@ -60,7 +58,7 @@ export const GameScreen = ({ history, result, isGameReady }) => {
 
 const mapStateToProps = state => ({
   result: getGameResult(state),
-  isGameReady: getGameReady(state),
+  numPlayers: getNumPlayers(state),
 });
 
 export default compose(

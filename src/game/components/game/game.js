@@ -7,6 +7,9 @@ import { getShips, getShots, getTurns, getHits } from "game/redux/game.reducer";
 import * as actions from "game/redux/game.actions";
 import Grid from "game/components/grid";
 import { getSize } from "app/redux/game-info.reducer";
+import { compose } from "redux";
+import { withRouter, Redirect } from "react-router-dom";
+import * as routes from "app/constants/routes";
 
 const StatPanel = styled.div`
   display: grid;
@@ -35,6 +38,10 @@ const Row = styled.div`
 `;
 
 export const Game = ({ ships = [], hits, shots, turns, size, player }) => {
+  if (!ships || ships.length === 0) {
+    return <Redirect to={routes.GAME_MODE} />;
+  }
+
   return (
     <Row>
       <Column>
@@ -62,4 +69,4 @@ const mapStateToProps = (state, { player }) => ({
   size: getSize(state),
 });
 
-export default connect(mapStateToProps, actions)(Game);
+export default compose(connect(mapStateToProps, actions), withRouter)(Game);

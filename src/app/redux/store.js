@@ -14,7 +14,7 @@ const persistConfig = {
   key: "root",
   storage,
   timeout: 0,
-  whitelist: ["gameRecords"],
+  whitelist: ["gameRecords", "gameInfo"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
