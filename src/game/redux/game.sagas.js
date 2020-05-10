@@ -40,23 +40,28 @@ export function* onGameSetup() {
 export function* onTileTouch({ payload: { row, col, player } }) {
   const shipId = yield select(getCell, row, col, player);
   const ship = yield select(getShip, shipId, player);
-
   let shots = yield select(getShots, player);
   let hits = yield select(getHits, player);
   let turns = yield select(getTurns, player);
+  let numPlayers = yield select(getNumPlayers);
+  let currentPlayer = player;
 
   shots += 1;
   turns -= 1;
+
+  if (numPlayers > 1) {
+    currentPlayer = player === 1 ? 2 : 1;
+  }
 
   if (ship) {
     ship.hit();
     hits += 1;
 
-    yield put(gameUpdate({ ship, shots, hits, turns, player }));
+    yield put(gameUpdate({ ship, shots, hits, turns, player, currentPlayer }));
     return;
   }
 
-  yield put(gameUpdate({ shots, turns, player }));
+  yield put(gameUpdate({ shots, turns, player, currentPlayer }));
 }
 
 export function* watchForGameEnd() {

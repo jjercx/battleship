@@ -28,9 +28,16 @@ export const tileTouch = ({ row, col, player }) => ({
   },
 });
 
-export const gameUpdate = ({ ship, shots, hits, turns, player }) => ({
+export const gameUpdate = ({
+  ship,
+  shots,
+  hits,
+  turns,
+  player,
+  currentPlayer,
+}) => ({
   type: GAME_UPDATE,
-  payload: { ship, shots, hits, turns, player },
+  payload: { ship, shots, hits, turns, player, currentPlayer },
 });
 
 export const gameEnd = ({ result }) => ({

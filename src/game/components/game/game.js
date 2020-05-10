@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { getShips, getShots, getTurns, getHits } from "game/redux/game.reducer";
 import * as actions from "game/redux/game.actions";
 import Grid from "game/components/grid";
-import { getSize } from "app/redux/game-info.reducer";
+import { getSize, getCurrentPlayer } from "app/redux/game-info.reducer";
 import { compose } from "redux";
 import { withRouter, Redirect } from "react-router-dom";
 import * as routes from "app/constants/routes";
@@ -35,9 +35,27 @@ const Row = styled.div`
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
+  position: relative;
 `;
 
-export const Game = ({ ships = [], hits, shots, turns, size, player }) => {
+const Backdrop = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: ${props => props.theme.black}99;
+`;
+
+export const Game = ({
+  ships = [],
+  hits,
+  shots,
+  turns,
+  size,
+  player,
+  currentPlayer,
+}) => {
   if (!ships || ships.length === 0) {
     return <Redirect to={routes.GAME_MODE} />;
   }
@@ -57,6 +75,7 @@ export const Game = ({ ships = [], hits, shots, turns, size, player }) => {
         </ShipPanel>
       </Column>
       <Grid size={size} player={player} />
+      {player !== currentPlayer && <Backdrop />}
     </Row>
   );
 };
@@ -67,6 +86,7 @@ const mapStateToProps = (state, { player }) => ({
   turns: getTurns(state, player),
   hits: getHits(state, player),
   size: getSize(state),
+  currentPlayer: getCurrentPlayer(state),
 });
 
 export default compose(connect(mapStateToProps, actions), withRouter)(Game);
