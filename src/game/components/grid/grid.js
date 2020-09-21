@@ -5,7 +5,7 @@ import radar from "./assets/radargrid.png";
 import { A_CHAR_CODE } from "app/constants/game";
 
 const Grid = styled.div`
-  --square-size: 8vmin;
+  --square-size: 4vmin;
   margin: 10px;
   display: grid;
   grid-template-columns: calc(var(--square-size) / 2) repeat(
@@ -35,7 +35,7 @@ const Letter = styled.span`
   grid-row-start: ${props => props.row};
 `;
 
-export default ({ size }) => {
+export default ({ size, player }) => {
   if (!size) {
     return null;
   }
@@ -55,7 +55,7 @@ export default ({ size }) => {
       ))}
       {[...Array(size)].map((_, row) =>
         [...Array(size)].map((_, col) => (
-          <Tile row={row} col={col} key={`${row}-${col}`} />
+          <Tile row={row} col={col} key={`${row}-${col}`} player={player} />
         ))
       )}
     </Grid>

@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom";
 import * as routes from "app/constants/routes";
 import { compose } from "redux";
 import { connect } from "react-redux";
-import { getGames } from "../../redux/games.reducer";
+import { getGameRecords } from "../../redux/game-records.reducer";
 import GameRecorsTable from "../game-record-table";
 
 const Container = styled.div`
@@ -38,7 +38,6 @@ const Column = styled.div`
 `;
 
 export const LeaderboardScreen = ({ history, gameRecords }) => {
-  console.log("gameRecords: ", gameRecords);
   const handleClose = () => history.replace(routes.HOME);
   return (
     <Container>
@@ -54,7 +53,7 @@ export const LeaderboardScreen = ({ history, gameRecords }) => {
 };
 
 const mapStateToProps = state => ({
-  gameRecords: getGames(state),
+  gameRecords: getGameRecords(state),
 });
 
 export default compose(withRouter, connect(mapStateToProps))(LeaderboardScreen);

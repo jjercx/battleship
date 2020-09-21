@@ -24,12 +24,12 @@ const Token = styled.div`
   background-size: cover;
 `;
 
-export const Tile = ({ row, col, tileTouch, cell }) => {
+export const Tile = ({ row, col, tileTouch, cell, player }) => {
   const [touched, setTouched] = useState(false);
 
   const handleClick = () => {
     if (!touched) {
-      tileTouch({ row, col });
+      tileTouch({ row, col, player });
       setTouched(true);
     }
   };
@@ -41,8 +41,8 @@ export const Tile = ({ row, col, tileTouch, cell }) => {
   );
 };
 
-const mapStateToProps = (state, { row, col }) => ({
-  cell: getCell(state, row, col),
+const mapStateToProps = (state, { row, col, player }) => ({
+  cell: getCell(state, row, col, player),
 });
 
 export default connect(mapStateToProps, actions)(Tile);

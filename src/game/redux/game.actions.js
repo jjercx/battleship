@@ -9,33 +9,40 @@ import {
 
 export const gameSetup = ({ gameMode }) => ({
   type: GAME_SETUP,
-  payload: gameMode,
+  payload: { gameMode },
 });
 
-export const gameReady = ({ ships, board }) => ({
+export const gameReady = ({ games }) => ({
   type: GAME_READY,
   payload: {
-    ships,
-    board,
+    games,
   },
 });
 
-export const tileTouch = ({ row, col }) => ({
+export const tileTouch = ({ row, col, player }) => ({
   type: TILE_TOUCH,
   payload: {
     row,
     col,
+    player,
   },
 });
 
-export const gameUpdate = ({ ship, shots, hits, turns }) => ({
+export const gameUpdate = ({
+  ship,
+  shots,
+  hits,
+  turns,
+  player,
+  currentPlayer,
+}) => ({
   type: GAME_UPDATE,
-  payload: { ship, shots, hits, turns },
+  payload: { ship, shots, hits, turns, player, currentPlayer },
 });
 
-export const gameEnd = ({ win }) => ({
+export const gameEnd = ({ result }) => ({
   type: GAME_END,
-  payload: { win },
+  payload: { result },
 });
 
 export const storeGameRecord = ({ gameRecord }) => ({

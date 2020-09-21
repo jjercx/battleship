@@ -4,6 +4,9 @@ import Title from "home/components/title";
 import Button from "app/components/button";
 import * as routes from "app/constants/routes";
 import { withRouter } from "react-router-dom";
+import { compose } from "redux";
+import { connect } from "react-redux";
+import * as actions from "../../redux/home.actions";
 
 const Container = styled.div`
   height: 100vh;
@@ -25,15 +28,21 @@ const Content = styled.div`
   }
 `;
 
-export const HomeScreen = ({ history }) => {
-  const handleNewGame = () => history.push(routes.GAME_MODE);
+export const HomeScreen = ({ history, setNumPlayers }) => {
+  const handleNewGame = numPlayers => {
+    setNumPlayers({ numPlayers });
+    history.push(routes.GAME_MODE);
+  };
+
   const handleOptions = () => history.push(routes.OPTIONS);
   const handleLeaderboard = () => history.push(routes.LEADERBOARD);
+
   return (
     <Container>
       <Content>
         <Title text="battleship" className="title"></Title>
-        <Button text="new game" onClick={handleNewGame}></Button>
+        <Button text="new game (1p)" onClick={() => handleNewGame(1)}></Button>
+        <Button text="new game (2p)" onClick={() => handleNewGame(2)}></Button>
         <Button text="leaderboard" onClick={handleLeaderboard}></Button>
         <Button text="options" onClick={handleOptions}></Button>
       </Content>
@@ -41,4 +50,4 @@ export const HomeScreen = ({ history }) => {
   );
 };
 
-export default withRouter(HomeScreen);
+export default compose(withRouter, connect(undefined, actions))(HomeScreen);
